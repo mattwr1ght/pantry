@@ -1,0 +1,10 @@
+<h1>Welcome to Pantry</h1>
+
+<ul>
+  <% @items.each do |item| %>
+    <li>
+      <a href="/home/<%= item.id %>">
+      <%= item.measure %>
+    </li>
+  <% end %>
+</ul>
