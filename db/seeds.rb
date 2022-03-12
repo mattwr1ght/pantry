@@ -1,3 +1,4 @@
+require_relative 'recipe_parser'
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -45,3 +46,54 @@ FoodItem.create(
    {item: "turkey ground", food_type: "solid", category: "meat", measure: "weight"},
   ]
 )
+
+all_recipes = seed_recipes
+
+all_recipes.each do |recipe|
+  Recipe.create( [{ name: recipe["name"], cuisine: recipe["cuisine"], vegetarian: recipe["vegetarian"], vegan: recipe["vegan"]}] )
+  recipe["instructions"].each do |instruction|
+    Instruction.create( [{ description: instruction }] )
+  end
+  # recipe["ingredients"].each do |ingredient|
+  #   Ingredient.create( [{ description: ingredient }] )
+  # end
+
+end
+
+# create_table "recipes", force: :cascade do |t|
+#   t.string "name"
+#   t.string "cuisine"
+#   t.datetime "created_at", precision: 6, null: false
+#   t.datetime "updated_at", precision: 6, null: false
+#   t.integer "vegetarian", limit: 1
+#   t.integer "vegan", limit: 1
+# end
+#
+# create_table "ingredients", force: :cascade do |t|
+#   t.string "quantity"
+#   t.integer "order", limit: 1
+#   t.datetime "created_at", precision: 6, null: false
+#   t.datetime "updated_at", precision: 6, null: false
+#   t.integer "recipes_id"
+#   t.integer "food_items_id"
+#   t.index ["food_items_id"], name: "index_ingredients_on_food_items_id"
+#   t.index ["recipes_id"], name: "index_ingredients_on_recipes_id"
+# end
+#
+# create_table "instructions", force: :cascade do |t|
+#   t.text "description"
+#   t.integer "order", limit: 1
+#   t.datetime "created_at", precision: 6, null: false
+#   t.datetime "updated_at", precision: 6, null: false
+#   t.integer "recipes_id"
+#   t.index ["recipes_id"], name: "index_instructions_on_recipes_id"
+# end
+#
+# create_table "recipes", force: :cascade do |t|
+#   t.string "name"
+#   t.string "cuisine"
+#   t.datetime "created_at", precision: 6, null: false
+#   t.datetime "updated_at", precision: 6, null: false
+#   t.integer "vegetarian", limit: 1
+#   t.integer "vegan", limit: 1
+# end
