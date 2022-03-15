@@ -51,9 +51,9 @@ all_recipes = seed_recipes
 
 all_recipes.each do |recipe|
   Recipe.create( [{ name: recipe["name"], cuisine: recipe["cuisine"], vegetarian: recipe["vegetarian"], vegan: recipe["vegan"]}] )
-  recipe["instructions"].each do |instruction|
-    Instruction.create( [{ description: instruction }] )
-  end
+  # recipe["instructions"].each do |instruction|
+  #   #Instruction.create( [{ description: instruction }] )
+  # end
   # recipe["ingredients"].each do |ingredient|
   #   Ingredient.create( [{ description: ingredient }] )
   # end
