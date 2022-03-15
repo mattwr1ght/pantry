@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_08_015843) do
+ActiveRecord::Schema.define(version: 2022_03_15_181952) do
 
   create_table "food_items", force: :cascade do |t|
     t.string "item"
@@ -26,10 +26,8 @@ ActiveRecord::Schema.define(version: 2022_03_08_015843) do
     t.integer "order", limit: 1
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "recipes_id"
-    t.integer "food_items_id"
-    t.index ["food_items_id"], name: "index_ingredients_on_food_items_id"
-    t.index ["recipes_id"], name: "index_ingredients_on_recipes_id"
+    t.integer "recipe_id", null: false
+    t.integer "food_item_id", null: false
   end
 
   create_table "instructions", force: :cascade do |t|
@@ -37,8 +35,7 @@ ActiveRecord::Schema.define(version: 2022_03_08_015843) do
     t.integer "order", limit: 1
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "recipes_id"
-    t.index ["recipes_id"], name: "index_instructions_on_recipes_id"
+    t.integer "recipe_id", null: false
   end
 
   create_table "recipes", force: :cascade do |t|
@@ -50,4 +47,7 @@ ActiveRecord::Schema.define(version: 2022_03_08_015843) do
     t.integer "vegan", limit: 1
   end
 
+  add_foreign_key "ingredients", "food_items"
+  add_foreign_key "ingredients", "recipes"
+  add_foreign_key "instructions", "recipes"
 end
