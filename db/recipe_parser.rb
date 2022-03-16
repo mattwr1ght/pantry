@@ -13,8 +13,8 @@ def extract_recipes(raw_recipes, breaks)
     white_breaks = recipe_temp.each_index.select { |i| recipe_temp[i] == ''}
     recipe = { "name" => recipe_temp[0], "cuisine" => recipe_temp[1], "servings" => recipe_temp[2],
                "vegetarian" => recipe_temp[3], "vegan" => recipe_temp[4],
-               "instructions" => recipe_temp[white_breaks[0]..white_breaks[1]].delete_if { |i| i == '' },
-               "ingredients" => recipe_temp[white_breaks[1]..recipe_temp.length].delete_if { |i| i == '' } }
+               "ingredients" => recipe_temp[white_breaks[0]..white_breaks[1]].delete_if { |i| i == '' },
+               "instructions" => recipe_temp[white_breaks[1]..recipe_temp.length].delete_if { |i| i == '' } }
     recipe_start = recipe_end
     recipe_list << recipe
   end
