@@ -1,0 +1,2 @@
+class ImportEvent < ApplicationRecord
+end
