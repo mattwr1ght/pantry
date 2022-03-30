@@ -10,13 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_15_181952) do
+ActiveRecord::Schema.define(version: 2022_03_25_222916) do
 
   create_table "food_items", force: :cascade do |t|
     t.string "item"
     t.string "food_type"
     t.string "category"
     t.string "measure"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "import_events", force: :cascade do |t|
+    t.string "import_type"
+    t.string "status"
+    t.string "file_name"
+    t.text "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -28,6 +37,8 @@ ActiveRecord::Schema.define(version: 2022_03_15_181952) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "recipe_id", null: false
     t.integer "food_item_id", null: false
+    t.string "measure"
+    t.string "description"
   end
 
   create_table "instructions", force: :cascade do |t|

@@ -1,0 +1,419 @@
+fruit:
+  - Abiu
+  - Açaí
+  - Acerola
+  - Ackee
+  - African cucumber
+  - Apple
+  - Apricot
+  - Avocado
+  - Banana
+  - Bilberry
+  - Blackberry
+  - Blackcurrant
+  - Black sapote
+  - Blueberry
+  - Boysenberry
+  - Breadfruit
+  - Buddha's hand
+  - Cactus pear
+  - Canistel
+  - Cashew
+  - Caviar Lime
+  - Cempedak
+  - Cherimoya
+  - Cherry
+  - Chico fruit
+  - Cloudberry
+  - Coco De Mer
+  - Coconut
+  - Crab apple
+  - Cranberry
+  - Currant
+  - Custard Apple
+  - Damson
+  - Date
+  - Dragonfruit
+  - Dried Plum
+  - Durian
+  - Egg Fruit
+  - Elderberry
+  - Feijoa
+  - Fig
+  - Finger Lime
+  - Fingered Citron
+  - Goji berry
+  - Gooseberry
+  - Grape
+  - Raisin
+  - Grapefruit
+  - Grewia asiatica
+  - Guava
+  - Hala Fruit
+  - Honeyberry
+  - Horned Melon
+  - Huckleberry
+  - Jabuticaba
+  - Jackfruit
+  - Jambul
+  - Japanese plum
+  - Jostaberry
+  - Jujube
+  - Juniper berry
+  - Kaffir Lime
+  - Kiwano
+  - Kiwifruit
+  - Kumquat
+  - Lemon
+  - Lime
+  - Loganberry
+  - Longan
+  - Loquat
+  - Grewia asiatica
+  - Guava
+  - Hala Fruit
+  - Hawthorn Berry
+  - Honeyberry
+  - Horned Melon
+  - Huckleberry
+  - Jabuticaba (Plinia)
+  - Jackfruit
+  - Jambul
+  - Japanese plum
+  - Jostaberry
+  - Jujube
+  - Juniper berry
+  - Kaffir Lime
+  - Kiwano
+  - Kiwifruit
+  - Kumquat
+  - Lemon
+  - Lime
+  - Loganberry
+  - Longan
+  - Loquat
+  - Lulo
+  - Lychee
+  - Magellan Barberry
+  - Mamey Apple
+  - Mamey Sapote
+  - Mango
+  - Mangosteen
+  - Marionberry
+  - Melon
+  - Cantaloupe
+  - Galia melon
+  - Honeydew
+  - Mamin Chino
+  - Mouse melon
+  - Musk melon
+  - Watermelon
+  - Miracle fruit
+  - Monstera deliciosa
+  - Mulberry
+  - Nance
+  - Nectarine
+  - Orange
+  - Blood orange
+  - Clementine
+  - Mandarine
+  - Tangerine
+  - Papaya
+  - Passionfruit
+  - Pawpaw
+  - Peach
+  - Peaches
+  - Pear
+  - Persimmon
+  - Prune
+  - Pineapple
+  - Pineberry
+  - Pitaya
+  - Plantain
+  - Plum
+  - Plumcot
+  - Pluot
+  - Plinia
+  - Pomegranate
+  - Pomelo
+  - Purple mangosteen
+  - Quince
+  - Raspberry
+  - Salmonberry
+  - Rambutan
+  - Redcurrant
+  - Rose apple
+  - Salal berry
+  - Salak
+  - Satsuma
+  - Shine Muscat
+  - Sloe
+  - Soursop
+  - Star apple
+  - Star fruit
+  - Strawberry
+  - Surinam cherry
+  - Tamarillo
+  - Tamarind
+  - Tangelo
+  - Tayberry
+  - Ugli fruit
+  - Vitis Vinifera
+  - White currant
+  - White sapote
+  - Yuzu
+vegetable:
+  - adzuki
+  - artichoke
+  - aubergine
+  - asparagus
+  - legumes
+  - alfalfa sprouts
+  - azuki beans
+  - bean sprouts
+  - black beans
+  - black-eyed peas
+  - borlotti bean
+  - broad beans
+  - butter bean
+  - chickpeas
+  - eggplant
+  - garbanzos
+  - green beans
+  - kidney beans
+  - lentils
+  - lima beans
+  - mung beans
+  - navy beans
+  - peanuts
+  - pinto beans
+  - runner beans
+  - split peas
+  - soy beans
+  - peas
+  - mange tout
+  - snap peas
+  - broccoflower
+  - broccoli
+  - calabrese
+  - brussels sprouts
+  - cabbage
+  - kohlrabi
+  - Savoy cabbage
+  - red cabbage
+  - cauliflower
+  - celery
+  - endive
+  - fiddleheads
+  - frisee
+  - fennel
+  - greens
+  - bok choy
+  - chard
+  - swiss chard
+  - beet greens
+  - collard greens
+  - kale
+  - mustard greens
+  - arugula
+  - lettuce
+  - mushrooms
+  - nettles
+  - New Zealand spinach
+  - okra
+  - chives
+  - garlic
+  - garlic clove
+  - leek
+  - onion
+  - shallot
+  - scallion
+  - spring onion
+  - green onion
+  - yellow onion
+  - red onion
+  - peppers
+  - bell pepper
+  - red bell pepper
+  - chili pepper
+  - jalapeño
+  - jalapeno
+  - habanero
+  - paprika
+  - tabasco pepper
+  - cayenne pepper
+  - radicchio
+  - rhubarb
+  - beetroot
+  - beet
+  - mangel-wurzel
+  - carrot
+  - celeriac
+  - corms
+  - eddoe
+  - konjac
+  - taro
+  - water chestnut
+  - ginger
+  - parsnip
+  - rutabaga
+  - radish
+  - wasabi
+  - horseradish
+  - daikon
+  - white radish
+  - tubers
+  - jicama
+  - jerusalem artichoke
+  - potato
+  - russet potatoes
+  - yellow potatoes
+  - redskin potatoes
+  - sweet potato
+  - yam
+  - turnip
+  - salsify
+  - Oyster Plant
+  - skirret
+  - sweetcorn
+  - topinambur
+  - acorn squash
+  - bitter melon
+  - butternut squash
+  - banana squash
+  - courgette
+  - cucumber
+  - delicata
+  - gem squash
+  - hubbard squash
+  - marrow
+  - spaghetti squash
+  - zucchini
+  - spinach
+  - tat soi
+  - tomato
+  - watercress
+herb:
+  - anise
+  - basil
+  - caraway
+  - cilantro
+  - coriander
+  - chamomile
+  - daikon
+  - dill
+  - fennel
+  - lavender
+  - cymbopogon (also known as lemongrass)
+  - marjoram
+  - oregano
+  - parsley
+  - rosemary
+  - thyme
+meat:
+  - whole chicken
+  - chicken breast
+  - chicken wing
+  - chicken thigh
+  - chicken leg
+  - chicken drumstick
+  - boneless chicken breast
+  - boneless chicken wing
+  - boneless chicken thigh
+  - boneless chicken leg
+  - boneless chicken drumstick
+  - chicken liver
+  - ground chicken
+  - duck
+  - duck breast
+  - quail
+  - turkey
+  - ground turkey
+  - turkey bacon
+  - ham
+  - pork chops
+  - bacon
+  - ground pork
+  - ground beef
+  - chuck roast
+  - ribeye steak
+  - egg
+  - egg white
+  - egg yolk
+dairy:
+  - milk
+  - whole milk
+  - heavy cream
+  - 2% milk
+  - sweetened condensed milk
+  - condensed milk
+  - evaporated milk
+  - butter
+  - unsalted butter
+  - cream
+  - heavy cream
+  - yogurt
+  - greek yogurt
+  - sour cream
+  - cheddar cheese
+  - cottage cheese
+  - american cheese
+  - swiss cheese
+  - gruyere cheese
+  - parmesan cheese
+  - goat cheese
+  - mozzerella cheese
+grain:
+  - rice
+  - white rice
+  - brown rice
+  - jasmine rice
+  - wild rice
+  - basmati rice
+  - flour
+  - all purpose flour
+  - all-purpose flour
+  - 00 flour
+sweetner:
+  - sugar
+  - granulated sugar
+  - cane sugar
+  - brown sugar
+  - confectioners' sugar
+  - honey
+  - stevia
+spice:
+  - nutmeg
+  - salt
+  - kosher salt
+  - sea salt
+  - coarse salt
+  - pepper
+  - vanilla extract
+  - cumin
+  - ground cumin
+  - black pepper
+liquid:
+  - water
+  - chicken stock
+  - beef stock
+  - fish stock
+  - vegetable stock
+  - lemon juice
+  - lime juice
+  - olive oil
+  - extra virgin olive oil
+  - balsamic vinegar
+  - cider vinegar
+  - soy sauce
+preserve:
+  - brined capers
+  - capers
+  - ketchup
+  - mustard
+  - relish
+  - pickle relish
+  - pickle
+  - dill pickle
+  - gerkin
+  - dijon mustard
