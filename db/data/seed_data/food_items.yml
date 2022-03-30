@@ -122,6 +122,7 @@ fruit:
   - Passionfruit
   - Pawpaw
   - Peach
+  - Peaches
   - Pear
   - Persimmon
   - Prune
@@ -220,19 +221,23 @@ vegetable:
   - nettles
   - New Zealand spinach
   - okra
-  - onions
   - chives
   - garlic
+  - garlic clove
   - leek
   - onion
   - shallot
   - scallion
   - spring onion
   - green onion
+  - yellow onion
+  - red onion
   - peppers
   - bell pepper
+  - red bell pepper
   - chili pepper
   - jalapeño
+  - jalapeno
   - habanero
   - paprika
   - tabasco pepper
@@ -261,6 +266,9 @@ vegetable:
   - jicama
   - jerusalem artichoke
   - potato
+  - russet potatoes
+  - yellow potatoes
+  - redskin potatoes
   - sweet potato
   - yam
   - turnip
@@ -309,11 +317,11 @@ meat:
   - chicken thigh
   - chicken leg
   - chicken drumstick
-  - chicken boneless breast
-  - chicken boneless wing
-  - chicken boneless thigh
-  - chicken boneless leg
-  - chicken boneless drumstick
+  - boneless chicken breast
+  - boneless chicken wing
+  - boneless chicken thigh
+  - boneless chicken leg
+  - boneless chicken drumstick
   - chicken liver
   - ground chicken
   - duck
@@ -324,6 +332,7 @@ meat:
   - turkey bacon
   - ham
   - pork chops
+  - bacon
   - ground pork
   - ground beef
   - chuck roast
@@ -333,10 +342,14 @@ meat:
   - egg yolk
 dairy:
   - milk
+  - whole milk
+  - heavy cream
+  - 2% milk
   - sweetened condensed milk
   - condensed milk
   - evaporated milk
   - butter
+  - unsalted butter
   - cream
   - heavy cream
   - yogurt
@@ -359,16 +372,48 @@ grain:
   - basmati rice
   - flour
   - all purpose flour
+  - all-purpose flour
   - 00 flour
 sweetner:
   - sugar
   - granulated sugar
   - cane sugar
   - brown sugar
+  - confectioners' sugar
   - honey
   - stevia
 spice:
   - nutmeg
   - salt
+  - kosher salt
+  - sea salt
+  - coarse salt
   - pepper
   - vanilla extract
+  - cumin
+  - ground cumin
+  - black pepper
+liquid:
+  - water
+  - chicken stock
+  - beef stock
+  - fish stock
+  - vegetable stock
+  - lemon juice
+  - lime juice
+  - olive oil
+  - extra virgin olive oil
+  - balsamic vinegar
+  - cider vinegar
+  - soy sauce
+preserve:
+  - brined capers
+  - capers
+  - ketchup
+  - mustard
+  - relish
+  - pickle relish
+  - pickle
+  - dill pickle
+  - gerkin
+  - dijon mustard
