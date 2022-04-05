@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_25_222916) do
+ActiveRecord::Schema.define(version: 2022_04_05_033852) do
 
   create_table "food_items", force: :cascade do |t|
     t.string "item"
@@ -54,8 +54,8 @@ ActiveRecord::Schema.define(version: 2022_03_25_222916) do
     t.string "cuisine"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "vegetarian", limit: 1
-    t.integer "vegan", limit: 1
+    t.boolean "vegetarian", limit: 1
+    t.boolean "vegan", limit: 1
   end
 
   add_foreign_key "ingredients", "food_items"
