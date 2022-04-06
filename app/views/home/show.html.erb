@@ -1,7 +1,30 @@
-<h1><%= @item.item %></h1>
+<h1><%= @recipe.name %></h1>
 
 <ul>
-  <%= @item.food_type %>
-  <%= @item.category %>
-  <%= @item.measure %>
+  <%= "Origin: " + @recipe.cuisine %>
+  <p>
+  <%= @recipe.dietary_preference %>
+  </p>
 </ul>
+
+<h2>Ingredients</h2>
+<p>
+  <ul>
+  <% @recipe.ingredients.each do |ingredient| %>
+    <li>
+      <%= ingredient.description %>
+    </li>
+  <% end %>
+  </ul>
+</p>
+
+<p>
+  <h2>Instructions</h2>
+  <ul>
+  <% @recipe.instructions.each do |instruction| %>
+    <li>
+      <%= instruction.description %>
+    </li>
+  <% end %>
+  </ul>
+</p>

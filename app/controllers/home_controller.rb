@@ -1,9 +1,10 @@
 class HomeController < ApplicationController
   def index
-    @items = FoodItem.all
+    @raw_recipes = Recipe.all
+    @recipes = @raw_recipes.map { |recipe| RecipeViewModel.new(recipe.id) }
   end
 
   def show
-    @item = FoodItem.find(params[:id])
+    @recipe = RecipeViewModel.new(params[:id])
   end
 end
