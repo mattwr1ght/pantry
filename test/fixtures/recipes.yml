@@ -1,4 +1,15 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# == Schema Information
+#
+# Table name: recipes
+#
+#  id         :integer          not null, primary key
+#  cuisine    :string
+#  name       :string
+#  vegan      :boolean
+#  vegetarian :boolean
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 
 dutch_baby_pancake:
   name: dutch baby pancake
