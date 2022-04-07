@@ -13,7 +13,8 @@ class RecipeParser
     recipe_list = []
     recipe_start = 0
     breaks.each do |recipe_end|
-      recipe_temp = raw_recipes[recipe_start, recipe_end].delete_if { |i| i == '$' }
+      recipe_temp = Array(raw_recipes[recipe_start..recipe_end])
+      recipe_temp.delete_if { |i| i == '$' }
       white_breaks = recipe_temp.each_index.select { |i| recipe_temp[i] == '' }
       recipe = recipe_hash(recipe_temp, white_breaks)
       recipe_start = recipe_end
@@ -28,7 +29,7 @@ class RecipeParser
       'servings' => recipe_temp[2],
       'vegetarian' => recipe_temp[3],
       'vegan' => recipe_temp[4],
-      'ingredients' => ingredients_hash(recipe_temp[white_breaks[0]..white_breaks[1]].delete_if { |i| i == '' }.to_a),
+      'ingredients' => ingredients_hash(Array(recipe_temp[white_breaks[0]..white_breaks[1]].delete_if { |i| i == '' })),
       'instructions' => recipe_temp[white_breaks[1]..recipe_temp.length].delete_if { |i| i == '' } }
   end
 

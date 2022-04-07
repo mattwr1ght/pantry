@@ -1,10 +1,8 @@
 <h1>Welcome to Pantry</h1>
 
-<ul>
-  <% @items.each do |item| %>
-    <li>
-      <a href="/home/<%= item.id %>">
-      <%= item.item %>
-    </li>
-  <% end %>
-</ul>
+<% @recipes.each do |recipe| %>
+  <ul>
+  <a href="/home/<%= recipe.recipe_id %>">
+    <%= recipe.name %>
+  </ul>
+<% end %>

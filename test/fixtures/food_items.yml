@@ -1,13 +1,31 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  item: MyString
-  type: 
-  category: MyString
-  measure: MyString
+all_purpose_flour:
+  item: all purpose flour
+  food_type:
+  category: grain
+  measure:
 
-two:
-  item: MyString
-  type: 
-  category: MyString
-  measure: MyString
+all-purpose_flour:
+  item: all-purpose flour
+  food_type:
+  category: grain
+  measure:
+
+egg_yolk:
+  item: egg yolk
+  food_type:
+  category: dairy
+  measure:
+
+lemon:
+  item: lemon
+  food_type:
+  category: fruit
+  measure:
+
+salt:
+  item: salt
+  food_type:
+  category: spice
+  measure:

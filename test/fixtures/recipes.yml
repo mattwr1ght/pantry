@@ -1,17 +1,25 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  cuisine: MyString
-  ingredients: MyText
-  instructions: MyText
-  vegeterian: 
-  vegan: 
+dutch_baby_pancake:
+  name: dutch baby pancake
+  cuisine: german
+  vegetarian: true
+  vegan: true
 
-two:
-  name: MyString
-  cuisine: MyString
-  ingredients: MyText
-  instructions: MyText
-  vegeterian: 
-  vegan: 
+burgers:
+  name: burgers
+  cuisine: american
+  vegetarian: false
+  vegan: false
+
+creamed_braising_greens:
+  name: creamed braising greens
+  cuisine: american
+  vegetarian: true
+  vegan: false
+
+saag_paneer:
+  name: saag paneer
+  cuisine: north indian
+  vegetarian: true
+  vegan: false
