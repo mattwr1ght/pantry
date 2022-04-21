@@ -3,8 +3,8 @@
 #                                Prefix Verb   URI Pattern                                                                              Controller#Action
 #                                  root GET    /                                                                                        welcome#index
 #                               welcome GET    /welcome(.:format)                                                                       welcome#index
-#                                  home GET    /home(.:format)                                                                          home#index
-#                                       GET    /home/:id(.:format)                                                                      home#show
+#                                  recipe GET    /recipe(.:format)                                                                          recipe#index
+#                                       GET    /recipe/:id(.:format)                                                                      recipe#show
 #         rails_postmark_inbound_emails POST   /rails/action_mailbox/postmark/inbound_emails(.:format)                                  action_mailbox/ingresses/postmark/inbound_emails#create
 #            rails_relay_inbound_emails POST   /rails/action_mailbox/relay/inbound_emails(.:format)                                     action_mailbox/ingresses/relay/inbound_emails#create
 #         rails_sendgrid_inbound_emails POST   /rails/action_mailbox/sendgrid/inbound_emails(.:format)                                  action_mailbox/ingresses/sendgrid/inbound_emails#create
@@ -30,6 +30,6 @@ Rails.application.routes.draw do
   root "welcome#index"
 
   get "/welcome", to: "welcome#index"
-  get "/home", to: "home#index"
-  get "/home/:id", to: "home#show"
+  get "/recipe", to: "recipe#index"
+  get "/recipe/:id", to: "recipe#show"
 end
