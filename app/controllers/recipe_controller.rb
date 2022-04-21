@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class RecipeController < ApplicationController
   def index
     @raw_recipes = Recipe.all
     @recipes = @raw_recipes.map { |recipe| RecipeViewModel.new(recipe.id) }
