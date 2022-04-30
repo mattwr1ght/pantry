@@ -6,7 +6,8 @@
 #  description  :string
 #  measure      :string
 #  order        :integer
-#  quantity     :string
+#  quantity     :decimal(, )
+#  quantity_str :string
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #  food_item_id :integer          not null
