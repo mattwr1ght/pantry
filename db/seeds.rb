@@ -34,7 +34,10 @@ recipes.each do |recipe|
       raise("#{ingredient['food_item']} in the recipe #{@recipe_record.name} is not present in the food_items table!")
     end
 
-    Ingredient.create(quantity: ingredient['quantity'],
+    # puts "#{ingredient['quantity']} , #{translator.str_to_dec(ingredient['quantity'])}     of #{ingredient['food_item']}"
+
+    Ingredient.create(quantity_str: ingredient['quantity'],
+                      quantity: Converters::FractionConverter.str_to_dec(ingredient['quantity']),
                       order: index,
                       recipe_id: @recipe_record.id,
                       food_item_id: @food_item.id,

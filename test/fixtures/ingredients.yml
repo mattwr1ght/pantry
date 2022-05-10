@@ -6,7 +6,8 @@
 #  description  :string
 #  measure      :string
 #  order        :integer
-#  quantity     :string
+#  quantity     :decimal(, )
+#  quantity_str :string
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #  food_item_id :integer          not null
@@ -20,6 +21,7 @@
 
 lemon_juice:
   quantity: '1'
+  quantity_str: '1'
   order: 1
   recipe: creamed_braising_greens
   food_item: lemon
@@ -28,6 +30,7 @@ lemon_juice:
 
 flour:
   quantity: '1/3'
+  quantity_str: '1/3'
   order: 1
   recipe: dutch_baby_pancake
   food_item: all_purpose_flour
@@ -36,6 +39,7 @@ flour:
 
 egg_yolk:
   quantity: '1'
+  quantity_str: '1'
   order: 1
   recipe: dutch_baby_pancake
   food_item: egg_yolk
@@ -44,6 +48,7 @@ egg_yolk:
 
 egg_yolks:
   quantity: '5'
+  quantity_str: '5'
   order: 1
   recipe: dutch_baby_pancake
   food_item: egg_yolk
@@ -52,6 +57,7 @@ egg_yolks:
 
 salt:
   quantity:
+  quantity_str: ''
   order: 1
   recipe: dutch_baby_pancake
   food_item: salt
@@ -60,6 +66,7 @@ salt:
 
 salt_ground:
   quantity:
+  quantity_str: ''
   order: 1
   recipe: burgers
   food_item: salt
@@ -68,6 +75,7 @@ salt_ground:
 
 flour_sifted:
   quantity: '1'
+  quantity_str: '1'
   order: 1
   recipe: creamed_braising_greens
   food_item: all-purpose_flour
