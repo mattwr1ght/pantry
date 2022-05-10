@@ -22,7 +22,7 @@ module Converters
       end
 
       # The case that num is not a fraction, but a whole number
-      return num.to_d
+      num.empty? ? nil : num.to_d
     end
 
   end
