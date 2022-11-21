@@ -11,7 +11,7 @@ class IngredientViewModel
 
     build_ingredient << ingredient.quantity_str if ingredient.quantity_str.present?
 
-    if ingredient.measure
+    if ingredient.measure.present?
       build_ingredient << (ingredient.quantity_str.present? ? " #{ingredient.measure}" : ingredient.measure.capitalize)
     end
 
