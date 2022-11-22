@@ -30,6 +30,5 @@ Rails.application.routes.draw do
   root "welcome#index"
 
   get "/welcome", to: "welcome#index"
-  get "/recipe", to: "recipe#index"
-  get "/recipe/:id", to: "recipe#show"
+  resources :recipes
 end
