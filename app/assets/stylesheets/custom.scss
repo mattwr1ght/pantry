@@ -16,7 +16,7 @@ $red: #dc3545;
 
 $secondary-text-color: $medium-gray;
 $accent-color: $orange;
-$secondary-link-color: $light-blue;
+$secondary-link-color: $dark-gray;
 $border-color: $light-gray;
 $error-color: $red;
 $error-background-color: $light-yellow;
@@ -43,7 +43,7 @@ $secondary: $dark-gray;
 // Header and Nav
 
 header {
-  background-color: $primary;
+  background-color: $light-yellow;
   padding: 0.5rem;
   margin-bottom: 3rem;
 
@@ -132,6 +132,7 @@ section.recipe {
   }
 
   h2 {
+    color: $secondary-text-color;
     font-size: 1.5rem;
     margin-bottom: 0.25rem;
   }
@@ -158,7 +159,7 @@ section.recipe-details {
   @extend .row;
 
   .image {
-    @extend .col-md-3, .text-left;
+    @extend .col-md-1, .text-left;
 
     input[type="submit"] {
       margin-top: 1rem;
@@ -166,11 +167,11 @@ section.recipe-details {
   }
 
   .details {
-    @extend .col-md-7, .text-left;
+    @extend .col-md-10, .text-left;
   }
 
   aside {
-    @extend .col-md-2;
+    @extend .col-md-1;
   }
 
   h1 {

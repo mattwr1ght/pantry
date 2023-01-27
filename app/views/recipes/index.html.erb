@@ -1,8 +1,12 @@
-<h1>Welcome to Pantry</h1>
-
 <% @recipes.each do |recipe| %>
-  <ul>
-  <a href="/recipe/<%= recipe.recipe_id %>">
-    <%= recipe.name %>
-  </ul>
+  <section class="recipe">
+    <div class="summary">
+      <h2>
+        <%= link_to recipe.name, recipe.raw_recipe %>
+      </h2>
+      <h3>
+        <%= recipe.cuisine %>
+      </h3>
+    </div>
+  </section>
 <% end %>
