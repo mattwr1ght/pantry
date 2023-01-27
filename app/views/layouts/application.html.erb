@@ -10,6 +10,21 @@
   </head>
 
   <body>
+
+  <header>
+    <h1><%= link_to image_tag("logo"), root_path %></h1>
+  </header>
+
+  <div class="content">
     <%= yield %>
-  </body>
+  </div>
+
+  <footer>
+    <p>
+      Copyright &copy; <%= Time.now.year %>
+      <%= mail_to "mattmyth@gmail.com" %>
+    </p>
+  </footer>
+
+</body>
 </html>

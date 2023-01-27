@@ -26,6 +26,10 @@ class RecipeViewModel
     recipe.name.titleize
   end
 
+  def raw_recipe
+    Recipe.find(recipe_id)
+  end
+
   private
 
   def recipe
