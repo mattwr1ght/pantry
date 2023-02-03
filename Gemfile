@@ -56,3 +56,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap', '~> 4.3.1'
 
+gem 'pry', '~> 0.13.1'
+gem 'pry-remote', '~> 0.1.8'
+
+
