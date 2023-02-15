@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 2022_04_27_175320) do
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "vegetarian", limit: 1
     t.boolean "vegan", limit: 1
+    t.index ["name", "cuisine", "vegan", "vegetarian"], name: "index_recipes_on_name_and_cuisine_and_vegan_and_vegetarian"
   end
 
   add_foreign_key "ingredients", "food_items"
