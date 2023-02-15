@@ -46,3 +46,10 @@ db/.DS_Store
 db/data/.DS_Store
 .DS_Store
 .idea/pantry.iml
+
+#recommended for sunspot gem
+solr/data
+solr/test/data
+solr/development/data
+solr/default/data
+solr/pids

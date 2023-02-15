@@ -10,6 +10,10 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
+# Indexes
+#
+#  index_recipes_on_name_and_cuisine_and_vegan_and_vegetarian  (name,cuisine,vegan,vegetarian)
+#
 
 dutch_baby_pancake:
   name: dutch baby pancake
