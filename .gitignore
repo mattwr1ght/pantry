@@ -53,3 +53,4 @@ solr/test/data
 solr/development/data
 solr/default/data
 solr/pids
+config/initializers/new_framework_defaults_6_1.rb
