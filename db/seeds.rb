@@ -19,7 +19,8 @@ recipes.each do |recipe|
   @recipe_record = Recipe.create(name: recipe['name'],
                                  cuisine: recipe['cuisine'],
                                  vegetarian: recipe['vegetarian'],
-                                 vegan: recipe['vegan'])
+                                 vegan: recipe['vegan'],
+                                 servings: recipe['servings'])
 
   order = 0
   recipe['instructions'].each do |instruction|
