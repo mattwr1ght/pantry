@@ -5,6 +5,7 @@
 #  id         :integer          not null, primary key
 #  cuisine    :string
 #  name       :string
+#  servings   :integer
 #  vegan      :boolean
 #  vegetarian :boolean
 #  created_at :datetime         not null

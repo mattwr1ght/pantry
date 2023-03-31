@@ -30,6 +30,12 @@ class RecipeViewModel
     Recipe.find(recipe_id)
   end
 
+  def servings
+    if recipe.servings.present? and recipe.servings > 0
+      "#{recipe.servings} #{'serving'.pluralize(recipe.servings)}"
+    end
+  end
+
   private
 
   def recipe
