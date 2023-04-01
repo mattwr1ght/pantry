@@ -20,27 +20,10 @@ class Recipe < ApplicationRecord
   has_many :instructions, dependent: :destroy
 
   searchable do
-    text  :name, :cuisine
+    text  :name
     boolean :vegan
     boolean :vegetarian
     time :updated_at
   end
 
-  # def self.search(search)
-  #   if search.presence
-  #     Recipe.search do 
-  #       fulltext search
-  #     end
-  #   else
-  #     Recipe.all 
-  #   end  
-    
-    # binding.pry
-    # if search 
-    #   recipe = Recipe.find_by(name: search)
-    #   recipe ? recipe : Recipe.all
-    # else
-    #   Recipe.all
-    # end
-  # end 
 end
