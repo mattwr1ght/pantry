@@ -12,7 +12,31 @@ class RecipesController < ApplicationController
     @recipe = RecipeViewModel.new(params[:id])
   end
 
+  def new
+    @recipe = Recipe.new
+  end
+
+  def create
+    @recipe = Recipe.new
+    # @recipe.update(cuisine_id: cuisine.id) if cuisine.presence
+    if @recipe.update(name: recipe_params[:name],
+                      vegetarian: recipe_params[:vegetarian],
+                      vegan: recipe_params[:vegan],
+                      servings: recipe_params[:servings],
+                      cuisine_id: cuisine&.id)
+      redirect_to @recipe, notice: "Recipe added!"
+    else
+      render :new
+    end
+  end    
+
   private
+
+  def cuisine
+    if recipe_params[:cuisine].presence
+      Cuisine.find_by(name: recipe_params[:cuisine]) || Cuisine.create(name: recipe_params[:cuisine].downcase)
+    end
+  end
 
   def search_recipes
     search = Recipe.search do 
@@ -24,6 +48,6 @@ class RecipesController < ApplicationController
   end
 
   def recipe_params
-    params.require(:recipe).permit(:recipe_id, :name, :search, :servings)
+    params.require(:recipe).permit(:recipe_id, :name, :search, :servings, :vegetarian, :vegan, :cuisine)
   end 
 end

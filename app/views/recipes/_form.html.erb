@@ -1,0 +1,15 @@
+<%= form_with(model: recipe, local: true) do |r| %>
+    <%# <%= render "shared/errors", object: recipe %> 
+    <%= r.label :name%>
+    <%= r.text_field :name, autofocus: true %>
+    <%= r.label :cuisine %>
+    <%= r.text_field :cuisine %>
+    <%= r.label :servings %>
+    <%= r.number_field :servings, in: 1..25, step: 1 %> 
+    <%= r.check_box :vegan %>
+    <%= r.label :vegan, "Vegan" %>
+    <%= r.check_box :vegetarian %>
+    <%= r.label :vegetarian, "Vegetarian" %>
+
+    <%= r.submit%>
+<% end %>

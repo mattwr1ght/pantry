@@ -1,5 +1,5 @@
 class RecipeViewModel
-  delegate :instructions, to: :recipe
+  delegate :instructions, :cuisine, to: :recipe
 
   attr_reader :recipe_id
 
@@ -8,7 +8,9 @@ class RecipeViewModel
   end
 
   def cuisine
-    recipe.cuisine.titleize
+    if recipe.cuisine_id.present? 
+      Cuisine.find(recipe.cuisine_id).name.titleize
+    end
   end
 
   def dietary_preference
