@@ -16,12 +16,13 @@ end
 recipes = RecipeParser.new.seed_recipes('./db/data/seed_data/recipes.txt')
 
 recipes.each do |recipe|
+  cuisine = Cuisine.find_by(name: recipe['cuisine']) || Cuisine.create(name: recipe['cuisine'])                   
   @recipe_record = Recipe.create(name: recipe['name'],
-                                 cuisine: recipe['cuisine'],
                                  vegetarian: recipe['vegetarian'],
                                  vegan: recipe['vegan'],
-                                 servings: recipe['servings'])
-
+                                 servings: recipe['servings'],
+                                 cuisine_id: cuisine.id)
+  
   order = 0
   recipe['instructions'].each do |instruction|
     Instruction.create(description: instruction,
