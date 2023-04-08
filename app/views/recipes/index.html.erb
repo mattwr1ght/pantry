@@ -1,8 +1,12 @@
-<%= form_tag(recipes_path, method: :get) do %>
-  <%= label_tag(:search, "Search Recipes:") %>
-  <%= text_field_tag :search, params[:search] %>
-  <%= submit_tag ("Search"), name: nil %>
+
+<%= form_tag recipes_path, method: :get, class: "inline-form" do %>
+  <p>
+    <%= label_tag :search, "Search Recipes:" %>
+    <%= search_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
 <% end %>
+
 
 <% @recipes.each do |recipe| %>
   <section class="recipe">
@@ -16,3 +20,9 @@
     </div>
   </section>
 <% end %>
+
+<section class="admin">
+  <h2>
+    <%= link_to "Add New Recipe", new_recipe_path, class: "button"%>
+  </h2>
+</section>

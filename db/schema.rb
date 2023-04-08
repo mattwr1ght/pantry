@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_31_212842) do
+ActiveRecord::Schema.define(version: 2023_04_01_012354) do
+
+  create_table "cuisines", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["name"], name: "index_cuisines_on_name", unique: true
+  end
 
   create_table "food_items", force: :cascade do |t|
     t.string "item"
@@ -52,16 +59,18 @@ ActiveRecord::Schema.define(version: 2023_03_31_212842) do
 
   create_table "recipes", force: :cascade do |t|
     t.string "name"
-    t.string "cuisine"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "vegetarian", limit: 1
     t.boolean "vegan", limit: 1
     t.integer "servings"
-    t.index ["name", "cuisine", "vegan", "vegetarian"], name: "index_recipes_on_name_and_cuisine_and_vegan_and_vegetarian"
+    t.integer "cuisine_id"
+    t.index ["cuisine_id"], name: "index_recipes_on_cuisine_id"
+    t.index ["name", "vegan", "vegetarian"], name: "index_recipes_on_name_and_cuisine_and_vegan_and_vegetarian"
   end
 
   add_foreign_key "ingredients", "food_items"
   add_foreign_key "ingredients", "recipes"
   add_foreign_key "instructions", "recipes"
+  add_foreign_key "recipes", "cuisines"
 end
