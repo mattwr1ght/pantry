@@ -34,7 +34,7 @@ class RecipesController < ApplicationController
 
   def cuisine
     if recipe_params[:cuisine].presence
-      Cuisine.find_by(name: recipe_params[:cuisine]) || Cuisine.create(name: recipe_params[:cuisine].downcase)
+      Cuisine.find_by(name: recipe_params[:cuisine].downcase) || Cuisine.create(name: recipe_params[:cuisine].downcase)
     end
   end
 
