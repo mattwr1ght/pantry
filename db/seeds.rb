@@ -7,7 +7,7 @@ food_items = YAML.load_file('./db/data/seed_data/food_items.yml')
 
 food_items.each_pair do |food_groups, foods|
   foods.each do |food|
-    FoodItem.create(item: food&.downcase, category: food_groups)
+    FoodItem.create(name: food&.downcase, category: food_groups)
   end
 end
 
@@ -31,7 +31,7 @@ recipes.each do |recipe|
   end
 
   recipe['ingredients'].each_pair do |index, ingredient|
-    @food_item = FoodItem.food(ingredient['food_item'])
+    @food_item = FoodItem.get_name(ingredient['food_item'])
     unless @food_item
       raise("#{ingredient['food_item']} in the recipe #{@recipe_record.name} is not present in the food_items table!")
     end

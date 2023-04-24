@@ -4,16 +4,14 @@
 #
 #  id         :integer          not null, primary key
 #  category   :string
-#  food_type  :string
-#  item       :string
-#  measure    :string
+#  name       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 class FoodItem < ApplicationRecord
   has_many :ingredients
 
-  def self.food(name)
-    FoodItem.find_by(item: name) || FoodItem.find_by(item: name.singularize)
+  def self.get_name(name)
+    FoodItem.find_by(name: name) || FoodItem.find_by(name: name.singularize)
   end
 end
