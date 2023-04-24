@@ -25,9 +25,9 @@ class IngredientViewModel
 
   def food_name(food)
     if ingredient.quantity_str.present? && ingredient.quantity_str.to_i > 1 && !ingredient.measure&.end_with?('s')
-      return food.item.pluralize
+      return food.name&.pluralize
     end
 
-    food.item
+    food.name
   end
 end
