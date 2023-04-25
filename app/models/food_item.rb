@@ -10,8 +10,14 @@
 #
 class FoodItem < ApplicationRecord
   has_many :ingredients
+  has_many :inventories
 
-  def self.get_name(name)
+  def self.find_by_name(name)
     FoodItem.find_by(name: name) || FoodItem.find_by(name: name.singularize)
   end
+
+  def self.get_name
+    name
+  end
+
 end
