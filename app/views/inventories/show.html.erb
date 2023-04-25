@@ -1,0 +1,17 @@
+<section class="recipe-details">
+  <div class="details">
+    <h1><%= @inventory.food_item.name %></h1>
+    <ul>
+      <%= "#{@inventory.quantity} #{@inventory.unit}" %>
+    </ul>  
+</div>
+
+<section class="admin">
+  <h2>
+    <%= link_to "Add New Item", new_inventory_path, class: "button"%>
+  </h2>
+  <h2>
+    <%= link_to "Back to Inventory", inventories_path, class: "button"%>
+  </h2>
+</section>
+

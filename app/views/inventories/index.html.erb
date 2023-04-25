@@ -1,0 +1,28 @@
+
+<%= form_tag inventories_path, method: :get, class: "inline-form" do %>
+  <p>
+    <%= label_tag :search, "Search Inventory:" %>
+    <%= search_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
+
+
+<% @inventory.each do |inventory| %>
+  <section class="inventory">
+    <div class="summary">
+      <h2>
+        <%= link_to inventory.food_item.name, inventory %>
+      </h2>
+      <h3>
+        <%= "#{inventory.quantity} #{inventory.unit}" %>
+      </h3>
+    </div>
+  </section>
+<% end %>
+
+<section class="admin">
+  <h2>
+    <%= link_to "Add New Item", new_inventory_path, class: "button"%>
+  </h2>
+</section>

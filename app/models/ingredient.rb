@@ -21,4 +21,7 @@
 class Ingredient < ApplicationRecord
   belongs_to :recipe
   belongs_to :food_item
+
+  attribute :quantity, :decimal
+
 end

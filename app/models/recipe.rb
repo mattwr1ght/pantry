@@ -32,4 +32,17 @@ class Recipe < ApplicationRecord
     time :updated_at
   end
 
+  def subtract_from_inventory
+    self.ingredients.each do |ingredient|
+      inventory_item = Inventory.find_by(food_item: ingredient.food_item)
+      # Check if there is enough inventory to subtract from
+      if inventory_item.quantity >= ingredient.quantity
+        inventory_item.quantity -= ingredient.quantity
+        inventory_item.save!
+      else
+        raise "Insufficient inventory for #{ingredient.food_item.name}"
+      end
+    end
+  end
+  
 end

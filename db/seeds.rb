@@ -31,7 +31,7 @@ recipes.each do |recipe|
   end
 
   recipe['ingredients'].each_pair do |index, ingredient|
-    @food_item = FoodItem.get_name(ingredient['food_item'])
+    @food_item = FoodItem.find_by_name(ingredient['food_item'])
     unless @food_item
       raise("#{ingredient['food_item']} in the recipe #{@recipe_record.name} is not present in the food_items table!")
     end
