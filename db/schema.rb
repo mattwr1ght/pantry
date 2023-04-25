@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_15_033512) do
+ActiveRecord::Schema.define(version: 2023_04_24_231058) do
 
   create_table "cuisines", force: :cascade do |t|
     t.string "name", null: false
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 2023_04_15_033512) do
     t.decimal "quantity", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "unit"
     t.index ["food_item_id"], name: "index_inventories_on_food_item_id"
   end
 
