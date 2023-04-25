@@ -1,0 +1,27 @@
+<%= form_with(model: @inventory, url: inventories_path) do |f| %>
+
+  <%= f.label :food_item_id %>
+  <%= f.collection_select :food_item_id, FoodItem.all, :id, :name, prompt: true %>
+
+  <%= f.label :quantity %>
+  <%= f.select :quantity, options_for_select(Inventory::ALLOWED_FRACTIONS.keys + Inventory::ALLOWED_WHOLE_NUMBERS.map(&:to_s)) %>
+
+  <%= f.label :unit %>
+  <%= f.select :unit, options_for_select(Inventory::ALLOWED_UNITS.values) %>
+
+
+  <%= f.submit %>
+<% end %>
+
+<script>
+$(document).ready(function() {
+  $('#food-item-autocomplete').autocomplete({
+    source: '<%= food_items_path %>',
+    minLength: 2,
+    select: function(event, ui) {
+      $('#inventory_food_item_id').val(ui.item.id);
+      $('#food-item-selection').show();
+    }
+  });
+});
+</script>
