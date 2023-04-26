@@ -12,16 +12,3 @@
 
   <%= f.submit %>
 <% end %>
-
-<script>
-$(document).ready(function() {
-  $('#food-item-autocomplete').autocomplete({
-    source: '<%= food_items_path %>',
-    minLength: 2,
-    select: function(event, ui) {
-      $('#inventory_food_item_id').val(ui.item.id);
-      $('#food-item-selection').show();
-    }
-  });
-});
-</script>
