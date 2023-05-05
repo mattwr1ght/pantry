@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_24_231058) do
+ActiveRecord::Schema.define(version: 2023_05_05_175800) do
 
   create_table "cuisines", force: :cascade do |t|
     t.string "name", null: false
@@ -64,6 +64,22 @@ ActiveRecord::Schema.define(version: 2023_04_24_231058) do
     t.index ["food_item_id"], name: "index_inventories_on_food_item_id"
   end
 
+  create_table "meal_plan_recipes", force: :cascade do |t|
+    t.integer "meal_plan_id", null: false
+    t.integer "recipe_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["meal_plan_id"], name: "index_meal_plan_recipes_on_meal_plan_id"
+    t.index ["recipe_id"], name: "index_meal_plan_recipes_on_recipe_id"
+  end
+
+  create_table "meal_plans", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["name"], name: "index_meal_plans_on_name"
+  end
+
   create_table "recipes", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -80,5 +96,7 @@ ActiveRecord::Schema.define(version: 2023_04_24_231058) do
   add_foreign_key "ingredients", "recipes"
   add_foreign_key "instructions", "recipes"
   add_foreign_key "inventories", "food_items"
+  add_foreign_key "meal_plan_recipes", "meal_plans"
+  add_foreign_key "meal_plan_recipes", "recipes"
   add_foreign_key "recipes", "cuisines"
 end

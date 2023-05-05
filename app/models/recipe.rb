@@ -23,6 +23,8 @@
 class Recipe < ApplicationRecord
   has_many :ingredients, dependent: :destroy
   has_many :instructions, dependent: :destroy
+  has_many :meal_plan_recipes
+  has_many :meal_plans, through: :meal_plan_recipes
   has_one :cuisine
 
   searchable do
