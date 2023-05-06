@@ -32,4 +32,5 @@ Rails.application.routes.draw do
   get "/welcome", to: "welcome#index"
   resources :recipes
   resources :inventories
+  resources :meal_plans
 end

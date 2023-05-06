@@ -38,6 +38,10 @@ class RecipeViewModel
     end
   end
 
+  def id
+    recipe.id
+  end
+
   private
 
   def recipe

@@ -135,12 +135,27 @@ section.recipe {
     color: $secondary-text-color;
     font-size: 1.5rem;
     margin-bottom: 0.25rem;
+    display: inline-block;
+  }
+  
+  h2 {
+    margin: 0 10px;
   }
 
+  h2:first-of-type {
+      margin-left: 0;
+  }
+
+  h2:last-of-type {
+      margin-right: 0;
+  }
+  
   h3 {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     color: $secondary-text-color;
     font-weight: 400;
+    display: inline-block;
+    margin-left: 30px;
   }
 
   p {
@@ -151,6 +166,22 @@ section.recipe {
     float: right;
     margin-top: -3.75rem;
   }
+
+  .recipe-link {
+    display: inline-block;
+    margin-right: 4px;
+  }
+  
+  .recipe-checkbox {
+    display: inline-block;
+    margin-right: 4px;
+  }
+  
+  .recipe-cuisine {
+    display: inline-block;
+    margin-left: 4px;
+  }
+
 }
 
 // Recipe Show Page
@@ -366,10 +397,18 @@ footer {
   background: $black;
   color: $light-gray;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 3rem;       
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+// Body
+
+// body {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: calc(100vh - 8rem); /* 8rem is the height of the footer */
+// }
 
 // Admin Section
 
@@ -449,11 +488,11 @@ form:not([class="button_to"]) {
     margin-top: 1.5rem;
   }
 
-  input[type="checkbox"] {
-    @extend .form-check-input;
-    width: 20px;
-    height: 20px;
-  }
+  // input[type="checkbox"] {
+  //   @extend .form-check-input;
+  //   width: 20px;
+  //   height: 20px;
+  // }
 
   input[type="checkbox"] + label {
     @extend .form-check-label;
@@ -485,7 +524,7 @@ form:not([class="button_to"]) {
 
   .checkboxes {
     @extend .form-check;
-    margin-top: 1.5rem;
+    // margin-top: 1.5rem;
   }
 
   div.field_with_errors {
