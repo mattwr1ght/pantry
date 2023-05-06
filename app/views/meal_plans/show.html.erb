@@ -1,0 +1,20 @@
+<section class="recipe-details">
+  <div class="details">
+    <h1><%= @meal_plan.name %></h1>
+    <h2>Recipes</h2>
+      <ul>
+      <% @recipes.each do |recipe| %>
+        <li>
+          <%= link_to recipe.name, recipe.raw_recipe %>
+        </li>
+      <% end %>
+  </div>
+  
+  <section class="admin">
+  <h2>
+    <%= link_to "All Meal Plans", meal_plans_path, class: "button"%>
+  </h2>
+  <h2>
+    <%= link_to "Delete Meal Plan", meal_plan_path(@meal_plan), method: :delete, data: { confirm: "Are you sure?" }, class: "button"%>
+  </h2>
+</section>

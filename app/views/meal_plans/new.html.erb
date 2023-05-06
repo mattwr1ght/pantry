@@ -1,0 +1,26 @@
+<h1>Create a Meal Plan</h1>
+<br/>
+
+<%= form_for MealPlan.new do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br/>
+</div>
+  <% @recipes.each do |recipe| %>
+    <section class="recipe">
+      <div>
+        <h2>
+          <%= f.check_box :recipe_ids, { multiple: true }, recipe.id, nil %>
+        </h2>
+        <h2>
+          <%= link_to recipe.name, recipe.raw_recipe %>
+        </h2>
+        <h3>
+          <%= recipe.cuisine %>
+        </h3>
+      </div>
+    </section>
+  <% end %>
+  <%= f.submit "Create Meal Plan With Selected Recipes" %>
+<% end %>

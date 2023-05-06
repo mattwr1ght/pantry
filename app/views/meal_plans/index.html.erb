@@ -1,0 +1,15 @@
+<% @meal_plans.each do |mp| %>
+  <section class="meal_plan">
+    <div class="summary">
+      <h2>
+        <%= link_to mp.name, mp %>
+      </h2>
+    </div>
+  </section>
+<% end %>
+
+<section class="admin">
+  <h2>
+    <%= link_to "Create New Meal Plan", new_meal_plan_path, class: "button"%>
+  </h2>
+</section>
