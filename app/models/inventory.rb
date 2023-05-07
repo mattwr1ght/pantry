@@ -24,6 +24,7 @@
 class Inventory < ApplicationRecord
   include FoodMeasurements::Constants
   belongs_to :food_item
+  belongs_to :meal_plan, optional: true 
 
   validates :unit, inclusion: { in: ALLOWED_UNITS }
   validates :quantity, inclusion: { in: ALLOWED_FRACTIONS.keys + ALLOWED_WHOLE_NUMBERS }
