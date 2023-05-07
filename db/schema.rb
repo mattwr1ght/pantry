@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_05_05_175800) do
+ActiveRecord::Schema.define(version: 2023_05_07_231717) do
 
   create_table "cuisines", force: :cascade do |t|
     t.string "name", null: false
@@ -37,19 +37,18 @@ ActiveRecord::Schema.define(version: 2023_05_05_175800) do
 
   create_table "ingredients", force: :cascade do |t|
     t.decimal "quantity"
-    t.integer "order", limit: 1
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "recipe_id", null: false
     t.integer "food_item_id", null: false
-    t.string "measure"
     t.string "description"
     t.string "quantity_str"
+    t.string "unit"
+    t.string "preparation"
   end
 
   create_table "instructions", force: :cascade do |t|
     t.text "description"
-    t.integer "order", limit: 1
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "recipe_id", null: false
@@ -61,7 +60,10 @@ ActiveRecord::Schema.define(version: 2023_05_05_175800) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "unit"
+    t.integer "meal_plan_id"
+    t.datetime "deleted_at"
     t.index ["food_item_id"], name: "index_inventories_on_food_item_id"
+    t.index ["meal_plan_id"], name: "index_inventories_on_meal_plan_id"
   end
 
   create_table "meal_plan_recipes", force: :cascade do |t|
@@ -96,6 +98,7 @@ ActiveRecord::Schema.define(version: 2023_05_05_175800) do
   add_foreign_key "ingredients", "recipes"
   add_foreign_key "instructions", "recipes"
   add_foreign_key "inventories", "food_items"
+  add_foreign_key "inventories", "meal_plans"
   add_foreign_key "meal_plan_recipes", "meal_plans"
   add_foreign_key "meal_plan_recipes", "recipes"
   add_foreign_key "recipes", "cuisines"
