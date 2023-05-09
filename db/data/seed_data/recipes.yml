@@ -1,0 +1,292 @@
+---
+- name: Title
+  cuisine: cuisine
+  servings: 4
+  vegetarian: true
+  vegan: true
+  ingredients:
+    - quantity: 1
+      unit: 
+      food_item: apple
+      preparation: 
+    - quantity: 1
+      unit: 
+      food_item: pear
+      preparation: 
+  instructions:
+    -  instruction number one.
+    -  instruction number two.
+
+- name: creamed braising greens
+  cuisine: American
+  servings: 4
+  vegetarian: true
+  vegan: false
+  ingredients:
+    - quantity: 6
+      unit: tbsp
+      food_item: butter
+    - quantity: 2
+      unit: clove
+      food_item: garlic
+      preparation: minced
+    - quantity: 1
+      unit: whole
+      food_item: shallot
+      preparation: thinly sliced
+  instructions:
+    -  In a saucepan, heat 2 tablespoons of the butter over high heat until it foams. Add the garlic and shallot and cook over medium-low heat, stirring, until softened and golden, 5 minutes. Add the cream, bring to a simmer and cook until slightly thickened, 10 minutes. Add the nutmeg and salt to taste. Using a hand blender, purée until smooth.
+    -  In a large pot, heat the remaining 4 tablespoons butter over high heat until it foams. Add the greens and cook, stirring constantly, until tender but still bright green, about 5 minutes. Sprinkle with salt and add the cream mixture. Lower the heat, cover and let simmer until cooked through, 5 minutes more. Taste for nutmeg and salt, season to taste and serve hot.
+
+- name: flan
+  cuisine: Mexican
+  servings: 8
+  vegetarian: true
+  vegan: false
+  ingredients:
+    - quantity: 2
+      unit: whole
+      food_item: eggs
+    - quantity: 5
+      unit: whole
+      food_item: egg yolks
+    - quantity: 1
+      unit: can
+      food_item: sweetened condensed milk
+      preparation: shorter than normal soup can
+    - quantity: 1
+      unit: can
+      food_item: evaporated milk
+      preparation: larger than campbell soup size
+    - quantity: '1/2'
+      unit: cup
+      food_item: milk
+    - quantity: 1
+      unit: tbsp
+      food_item: vanilla extract
+    - quantity: '1/2'
+      unit: tsp
+      food_item: salt
+    - quantity: 1/4
+      unit: cup
+      food_item: water
+    - quantity: 2/3
+      unit: cup
+      food_item: sugar
+  instructions:
+    -  In a pan, combine 1/4 cup water and 2/3 cup sugar. Stir sugar into water before cooking. Place over medium-high heat and bring to a boil. Boil for 5 minutes, then for 1 more minute, until it starts to turn golden. Then, swirl the pan slowly. Continue to swirl for 2-4 more minutes or until the color turns golden caramel color, like the color of peanut butter. Add 2 tablespoons of warm tap water, swirl in, then pour into a non-stick loaf pan (flan pan) on a towel in a larger pan.
+    -  In a bowl, whisk together 2 whole eggs and 5 egg yolks. Add the sweetened condensed milk (shorter than normal soup can), evaporated milk (larger than Campbell soup size), 1/2 cup whole milk, 1 tablespoon vanilla extract, and 1/2 teaspoon of salt. Stir together and strain the mixture into the loaf pan.
+    -  Cover the loaf pan with foil to prevent skin from drying out. Place a folded cloth on a large baking pan, and place the loaf pan on top of that. Add hot water (not quite boiling) into the larger pan surrounding flan pan.
+    -  Bake in a 300 degree oven for 1 hour and 15 minutes to 1 hour and 30 minutes, or until the internal temperature reaches 180 degrees. Be very careful with the hot water. Let cool in the hot water for 90 minutes and then chill for at least a few hours in the refrigerator, but no more than one day.
+    -  Cut the edge of the flan with a knife to ensure it releases.
+
+- name: Chicken Piccata
+  cuisine: Italian
+  servings: 4
+  vegetarian: false
+  vegan: false
+  ingredients:
+    - quantity: 2
+      unit: whole
+      food_item: boneless chicken breasts
+      preparation: butterflied and then cut in half
+    - quantity: 1
+      unit: tsp
+      food_item: sea salt
+    - quantity: 1
+      unit: tsp
+      food_item: black pepper
+      preparation: freshly ground
+    - quantity: 1
+      unit: cup
+      food_item: All-purpose flour
+      preparation: for dredging
+    - quantity: 6
+      unit: tbsp
+      food_item: unsalted butter
+    - quantity: 5
+      unit: tbsp
+      food_item: extra virgin olive oil
+    - quantity: 1/3
+      unit: cup
+      food_item: lemon juice
+      preparation: freshly squeezed
+    - quantity: 1/2
+      unit: cup
+      food_item: chicken stock
+    - quantity: 1/4
+      unit: cup
+      food_item: brined capers
+      preparation: rinsed
+    - quantity: 1/3
+      unit: cup
+      food_item: parsley
+      preparation: chopped
+  instructions:
+    -  Season chicken with salt and pepper. Dredge chicken in flour and shake off excess.
+    -  In a large skillet over medium high heat, melt 2 tablespoons of butter with 3 tablespoons olive oil. When butter and oil start to sizzle, add 2 pieces of chicken and cook for 3 minutes. When chicken is browned, flip and cook other side for 3 minutes. Remove and transfer to plate. Melt 2 more tablespoons butter and add another 2 tablespoons olive oil. When butter and oil start to sizzle, add the other 2 pieces of chicken and brown both sides in same manner. Remove pan from heat and add chicken to the plate.
+    -  Into the pan add the lemon juice, stock and capers. Return to stove and bring to boil, scraping up brown bits from the pan for extra flavor. Check for seasoning. Return all the chicken to the pan and simmer for 5 minutes. Remove chicken to platter.
+    -  Add remaining 2 tablespoons butter to sauce and whisk vigorously. Pour sauce over chicken and garnish with parsley.
+
+- name: Dutch Baby Pancake
+  cuisine: German
+  servings: 2
+  prep_time: 1
+  cook_time: 0
+
+  ingredients:
+    - quantity: 1/3
+      unit: cup
+      food_item: all-purpose flour
+    - quantity: 1/2
+      unit: cup
+      food_item: whole milk
+    - quantity: 2
+      unit: 
+      food_item: eggs
+      preparation: lightly beaten
+      description: large
+    - quantity: 1
+      unit: pinch
+      food_item: nutmeg
+      preparation: freshly grated
+    - quantity: 1
+      unit: pinch
+      food_item: coarse salt
+    - quantity: 4
+      unit: tbsp
+      food_item: unsalted butter
+    - quantity: 2
+      unit: tbsp
+      food_item: confectioners' sugar
+    - quantity: 1/2
+      unit: 
+      food_item: lemon
+      preparation: freshly squeezed
+      description: of a 
+
+  instructions:
+    - Preheat oven to 425 degrees.
+    - In a medium bowl, lightly beat flour, milk, eggs, nutmeg, and salt until just combined. Batter will be slightly lumpy.
+    - Melt butter in a 10-inch cast-iron skillet over medium-high heat. Add flour mixture and transfer to oven.
+    - Bake until pancake is golden brown, 15 to 20 minutes.
+    - Sprinkle pancake with sugar and return to oven for 2 to 3 minutes.
+    - Remove from oven and sprinkle with lemon juice; serve immediately with jelly, jam, or marmalade.
+
+- name: Gazpacho
+  cuisine: Spanish
+  servings: 4
+  vegetarian: true
+  vegan: true
+  ingredients:
+    - quantity: 1 1/2
+      unit: lb
+      food_item: tomatoes
+      preparation: peeled, seeded and chopped
+    - quantity: 1
+      unit: cup
+      food_item: cucumber
+      preparation: peeled, seeded and chopped
+    - quantity: 1/2
+      unit: cup
+      food_item: red bell pepper
+      preparation: chopped
+    - quantity: 1/2
+      unit: cup
+      food_item: red onion
+      preparation: chopped
+    - quantity: 1
+      unit: 
+      food_item: jalapeño
+      descriptor: small 
+      preparation: seeded and minced
+    - quantity: 1
+      unit: 
+      food_item: garlic clove
+      descriptor: medium
+      preparation: minced
+    - quantity: 1/4
+      unit: cup
+      food_item: extra virgin olive oil
+    - quantity: 1
+      food_item: lime
+      preparation: juiced
+    - quantity: 2
+      unit: tsp
+      food_item: balsamic vinegar
+    - quantity: 2
+      unit: tsp
+      food_item: soy sauce
+    - quantity: 1/2
+      unit: tsp
+      food_item: ground cumin
+      preparation: toasted
+    - quantity: 1
+      unit: tsp
+      food_item: kosher salt
+    - quantity: 1/4
+      unit: tsp
+      food_item: black pepper
+      preparation: freshly ground
+    - quantity: 2
+      unit: tbsp
+      food_item: basil
+      preparation: chiffonade
+  instructions:
+    - Fill a 6-quart pot halfway full of water, set over high heat and bring to a boil.
+    - Make an X with a paring knife on the bottom of the tomatoes. Drop the tomatoes into the boiling water for 15 seconds, remove and transfer to an ice bath and allow to cool until able to handle, approximately 1 minute. Remove and pat dry. Peel, core and seed the tomatoes. When seeding the tomatoes, place the seeds and pulp into a fine mesh strainer set over a bowl in order to catch the juice. Press as much of the juice through as possible and then add enough bottled tomato juice to bring the total to 1 cup.
+    - Place the tomatoes and juice into a large mixing bowl. Add the cucumber, bell pepper, red onion, jalapeno, garlic clove, olive oil, lime juice, balsamic vinegar, Worcestershire, cumin, salt and pepper and stir to combine. Transfer 1 1/2 cups of the mixture to a blender and puree for 15 to 20 seconds on high speed.
+    - Return the pureed mixture to the bowl and stir to combine. Cover and chill for 2 hours and up to overnight.
+    - Serve with chiffonade of basil.
+
+- name: GERMAN POTATO SALAD
+  cuisine: German
+  vegetarian: false
+  vegan: false
+  ingredients:
+    - quantity: 3
+      unit: lb
+      food_item: potatoes
+    - quantity: 1
+      food_item: yellow onion
+      preparation: quartered
+    - quantity: 1/2
+      unit: lb
+      food_item: bacon
+      preparation: diced
+    - quantity: 1
+      adjective: large
+      food_item: red onion
+      preparation: diced
+    - quantity: 3/4
+      unit: cup
+      food_item: cider vinegar
+    - quantity: 1
+      unit: tbsp
+      food_item: Dijon mustard
+    - quantity: 1/4
+      unit: cup
+      food_item: olive oil
+    - quantity: 1/4
+      unit: tsp
+      food_item: Salt
+    - quantity: 1/4
+      unit: tsp
+      food_item: black pepper
+      preparation: freshly ground
+    - quantity: 8
+      food_item: green onions
+      preparation: thinly sliced
+    - quantity: 1/4
+      unit: cup
+      food_item: parsley
+      preparation: chopped
+  instructions:
+    -  Preheat the grill to high.
+    -  Place potatoes in a large pot with the yellow onion and cover with cold water. Cook, on the grates of the grill, or on a burner, until tender.
+    -  Drain, discard the onion, and cut the potatoes into cubes when cool enough to handle. Place the potatoes in a large bowl and cover to keep warm.
+    -  Place a large saute pan on the grates of the grill. Add the bacon and cook until crisp. Remove the bacon with a slotted spoon and drain on a paper towel-lined plate.
+    -  Add the red onion to the rendered bacon fat and cook until soft, about 3 to 4 minutes.
+    -  Carefully add the vinegar and mustard and cook for 2 more minutes. Whisk in the oil and season, to taste, with salt and pepper.
+    -  Add the hot dressing to the potatoes and toss gently to coat. Fold in the green onions and parsley.
+    -  Season again with salt and pepper, to taste.

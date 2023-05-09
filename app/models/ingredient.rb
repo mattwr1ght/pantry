@@ -4,10 +4,10 @@
 #
 #  id           :integer          not null, primary key
 #  description  :string
-#  measure      :string
-#  order        :integer
+#  preparation  :string
 #  quantity     :decimal(, )
 #  quantity_str :string
+#  unit         :string
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #  food_item_id :integer          not null
@@ -19,8 +19,13 @@
 #  recipe_id     (recipe_id => recipes.id)
 #
 class Ingredient < ApplicationRecord
+  include FoodMeasurements::Constants
+
   belongs_to :recipe
   belongs_to :food_item
+
+  validates :unit, inclusion: { in: ALLOWED_UNITS.keys.map(&:to_s) }, allow_nil: true
+  validates :quantity, inclusion: { in: ALLOWED_FRACTIONS.keys + ALLOWED_WHOLE_NUMBERS }
 
   attribute :quantity, :decimal
 
