@@ -19,8 +19,13 @@
 #  recipe_id     (recipe_id => recipes.id)
 #
 class Ingredient < ApplicationRecord
+  include FoodMeasurements::Constants
+
   belongs_to :recipe
   belongs_to :food_item
+
+  validates :unit, inclusion: { in: ALLOWED_UNITS.keys.map(&:to_s) }, allow_nil: true
+  validates :quantity, inclusion: { in: ALLOWED_FRACTIONS.keys + ALLOWED_WHOLE_NUMBERS }
 
   attribute :quantity, :decimal
 

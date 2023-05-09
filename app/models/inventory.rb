@@ -22,31 +22,8 @@
 #  meal_plan_id  (meal_plan_id => meal_plans.id)
 #
 class Inventory < ApplicationRecord
+  include FoodMeasurements::Constants
   belongs_to :food_item
-
-  ALLOWED_UNITS = {
-    'cup': 'Cup',
-    'tbsp': 'Tablespoon',
-    'tsp': 'Teaspoon',
-    'whole': 'Whole',
-    'gal': 'Gallon',
-    'oz': 'Ounce',
-    'lb': 'Pound'
-  }.freeze
-
-  ALLOWED_FRACTIONS = {
-    "0": 0,
-    "1/32": 0.03125,
-    "1/16": 0.0625,
-    "1/8": 0.125,
-    "1/4": 0.25,
-    "1/3": 0.333333,
-    "1/2": 0.5,
-  }.freeze
-
-  ALLOWED_WHOLE_NUMBERS = (
-    1..144
-  ).to_a.freeze
 
   validates :unit, inclusion: { in: ALLOWED_UNITS.keys.map(&:to_s) }
   validates :quantity, inclusion: { in: ALLOWED_FRACTIONS.keys + ALLOWED_WHOLE_NUMBERS }

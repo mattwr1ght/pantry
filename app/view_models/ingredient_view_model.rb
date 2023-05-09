@@ -11,23 +11,16 @@ class IngredientViewModel
 
     build_ingredient << ingredient.quantity_str if ingredient.quantity_str.present?
 
-    if ingredient.measure.present?
-      build_ingredient << (ingredient.quantity_str.present? ? " #{ingredient.measure}" : ingredient.measure.capitalize)
+    if ingredient.unit.present?
+      unit = FoodMeasurements::Constants::ALLOWED_UNITS[ingredient.unit]
+      build_ingredient << (ingredient&.quantity > 1 ? " #{unit.pluralize}" : " #{unit}")
     end
 
-    build_ingredient << (ingredient.quantity_str.present? || ingredient.measure.present? ? " #{food_name(food)}" : food_name(food).capitalize)
+    build_ingredient << " #{ingredient.description}" if ingredient.description.present?
 
-    build_ingredient << ", #{ingredient.description}" if ingredient.description.present?
+    build_ingredient << (ingredient.quantity_str.present? || ingredient.quantity.present? ? " #{food.name}" : food.name.capitalize)
+
+    build_ingredient << ", #{ingredient.preparation}" if ingredient.preparation.present?
     build_ingredient
-  end
-
-  private
-
-  def food_name(food)
-    if ingredient.quantity_str.present? && ingredient.quantity_str.to_i > 1 && !ingredient.measure&.end_with?('s')
-      return food.name&.pluralize
-    end
-
-    food.name
   end
 end
