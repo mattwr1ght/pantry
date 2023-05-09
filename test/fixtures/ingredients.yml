@@ -4,10 +4,10 @@
 #
 #  id           :integer          not null, primary key
 #  description  :string
-#  measure      :string
-#  order        :integer
+#  preparation  :string
 #  quantity     :decimal(, )
 #  quantity_str :string
+#  unit         :string
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #  food_item_id :integer          not null
