@@ -7,7 +7,7 @@
   <%= f.select :quantity, options_for_select(Inventory::ALLOWED_FRACTIONS.keys + Inventory::ALLOWED_WHOLE_NUMBERS.map(&:to_s)) %>
 
   <%= f.label :unit %>
-  <%= f.select :unit, options_for_select(Inventory::ALLOWED_UNITS.values) %>
+  <%= f.select :unit, options_for_select(Inventory::ALLOWED_UNITS) %>
 
 
   <%= f.submit %>

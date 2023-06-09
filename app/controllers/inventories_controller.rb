@@ -19,7 +19,7 @@ class InventoriesController < ApplicationController
     @inventory = Inventory.new
     # @recipe.update(cuisine_id: cuisine.id) if cuisine.presence
     if @inventory.update(quantity: quantity,
-                      unit: Inventory::ALLOWED_UNITS.key(inventory_params[:unit]),
+                      unit: inventory_params[:unit],
                       food_item_id: inventory_params[:food_item_id])
       redirect_to @inventory, notice: "Item added!"
     else

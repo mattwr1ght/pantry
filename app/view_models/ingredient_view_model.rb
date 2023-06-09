@@ -12,7 +12,7 @@ class IngredientViewModel
     build_ingredient << ingredient.quantity_str if ingredient.quantity_str.present?
 
     if ingredient.unit.present?
-      unit = FoodMeasurements::Constants::ALLOWED_UNITS[ingredient.unit]
+      unit = ingredient.unit
       build_ingredient << (ingredient&.quantity > 1 ? " #{unit.pluralize}" : " #{unit}")
     end
 

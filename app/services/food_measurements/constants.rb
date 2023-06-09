@@ -1,18 +1,5 @@
 module FoodMeasurements
   module Constants
-
-    ALLOWED_UNITS = {
-      "can": "can",
-      "clove": "clove",
-      "cup": "cup",
-      "gal": "gallon",
-      "lb": "pound",
-      "oz": "ounce",
-      "pinch": "pinch of",
-      "tbsp": "tablespoon",
-      "tsp": "teaspoon",
-      "whole": "whole"
-    }.transform_keys(&:to_s).freeze
   
     ALLOWED_FRACTIONS = {
       "0": 0,
@@ -24,6 +11,23 @@ module FoodMeasurements
       "1/2": 0.5,
     }.freeze
   
+    ALLOWED_UNITS = [
+      "bunch",
+      "can",
+      "clove", 
+      "cup", 
+      "fluid ounce", 
+      "gallon", 
+      "liter", 
+      "milliliter", 
+      "ounce", 
+      "pinch of",
+      "pound", 
+      "tablespoon", 
+      "teaspoon", 
+      "whole"
+    ].freeze
+
     ALLOWED_WHOLE_NUMBERS = (
       1..144
     ).to_a.freeze
