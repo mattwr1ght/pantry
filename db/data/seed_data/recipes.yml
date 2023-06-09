@@ -24,7 +24,7 @@
   vegan: false
   ingredients:
     - quantity: 6
-      unit: tbsp
+      unit: tablespoon
       food_item: butter
     - quantity: 2
       unit: clove
@@ -62,10 +62,10 @@
       unit: cup
       food_item: milk
     - quantity: 1
-      unit: tbsp
+      unit: tablespoon
       food_item: vanilla extract
     - quantity: '1/2'
-      unit: tsp
+      unit: teaspoon
       food_item: salt
     - quantity: 1/4
       unit: cup
@@ -91,10 +91,10 @@
       food_item: boneless chicken breasts
       preparation: butterflied and then cut in half
     - quantity: 1
-      unit: tsp
+      unit: teaspoon
       food_item: sea salt
     - quantity: 1
-      unit: tsp
+      unit: teaspoon
       food_item: black pepper
       preparation: freshly ground
     - quantity: 1
@@ -102,10 +102,10 @@
       food_item: All-purpose flour
       preparation: for dredging
     - quantity: 6
-      unit: tbsp
+      unit: tablespoon
       food_item: unsalted butter
     - quantity: 5
-      unit: tbsp
+      unit: tablespoon
       food_item: extra virgin olive oil
     - quantity: 1/3
       unit: cup
@@ -147,17 +147,17 @@
       preparation: lightly beaten
       description: large
     - quantity: 1
-      unit: pinch
+      unit: pinch of
       food_item: nutmeg
       preparation: freshly grated
     - quantity: 1
-      unit: pinch
+      unit: pinch of
       food_item: coarse salt
     - quantity: 4
-      unit: tbsp
+      unit: tablespoon
       food_item: unsalted butter
     - quantity: 2
-      unit: tbsp
+      unit: tablespoon
       food_item: confectioners' sugar
     - quantity: 1/2
       unit: 
@@ -180,7 +180,7 @@
   vegan: true
   ingredients:
     - quantity: 1 1/2
-      unit: lb
+      unit: pound
       food_item: tomatoes
       preparation: peeled, seeded and chopped
     - quantity: 1
@@ -212,24 +212,24 @@
       food_item: lime
       preparation: juiced
     - quantity: 2
-      unit: tsp
+      unit: teaspoon
       food_item: balsamic vinegar
     - quantity: 2
-      unit: tsp
+      unit: teaspoon
       food_item: soy sauce
     - quantity: 1/2
-      unit: tsp
+      unit: teaspoon
       food_item: ground cumin
       preparation: toasted
     - quantity: 1
-      unit: tsp
+      unit: teaspoon
       food_item: kosher salt
     - quantity: 1/4
-      unit: tsp
+      unit: teaspoon
       food_item: black pepper
       preparation: freshly ground
     - quantity: 2
-      unit: tbsp
+      unit: tablespoon
       food_item: basil
       preparation: chiffonade
   instructions:
@@ -245,13 +245,13 @@
   vegan: false
   ingredients:
     - quantity: 3
-      unit: lb
+      unit: pound
       food_item: potatoes
     - quantity: 1
       food_item: yellow onion
       preparation: quartered
     - quantity: 1/2
-      unit: lb
+      unit: pound
       food_item: bacon
       preparation: diced
     - quantity: 1
@@ -262,16 +262,16 @@
       unit: cup
       food_item: cider vinegar
     - quantity: 1
-      unit: tbsp
+      unit: tablespoon
       food_item: Dijon mustard
     - quantity: 1/4
       unit: cup
       food_item: olive oil
     - quantity: 1/4
-      unit: tsp
+      unit: teaspoon
       food_item: Salt
     - quantity: 1/4
-      unit: tsp
+      unit: teaspoon
       food_item: black pepper
       preparation: freshly ground
     - quantity: 8
