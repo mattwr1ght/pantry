@@ -12,25 +12,44 @@ module FoodMeasurements
     }.freeze
   
     ALLOWED_UNITS = [
-      "bunch",
-      "can",
-      "clove", 
-      "cup", 
-      "fluid ounce", 
-      "gallon", 
-      "liter", 
-      "milliliter", 
-      "ounce", 
-      "pinch of",
-      "pound", 
-      "tablespoon", 
-      "teaspoon", 
-      "whole"
+       "bunch",
+       "can",
+       "clove", 
+       "cup", 
+       "dash", 
+       "fluid_ounce", 
+       "gallon", 
+       "liter", 
+       "milliliter", 
+       "ounce", 
+       "pinch_of",
+       "pint", 
+       "pound",
+       "package",
+       "quart", 
+       "slice", 
+       "tablespoon", 
+       "teaspoon", 
+       "whole",
     ].freeze
 
     ALLOWED_WHOLE_NUMBERS = (
       1..144
     ).to_a.freeze
 
+    CATEGORIES = [
+      "dairy_liquid", 
+      "dairy_solid", 
+      "fruit", 
+      "grain", 
+      "herb", 
+      "liquid", 
+      "meat", 
+      "preserve", 
+      "spice", 
+      "sweetner", 
+      "vegetable"
+    ]
+  
   end
 end

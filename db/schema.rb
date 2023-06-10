@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_05_07_231717) do
+ActiveRecord::Schema.define(version: 2023_06_10_152448) do
 
   create_table "cuisines", force: :cascade do |t|
     t.string "name", null: false
@@ -94,6 +94,34 @@ ActiveRecord::Schema.define(version: 2023_05_07_231717) do
     t.index ["name", "vegan", "vegetarian"], name: "index_recipes_on_name_and_cuisine_and_vegan_and_vegetarian"
   end
 
+  create_table "unit_conversions", force: :cascade do |t|
+    t.integer "food_item_id"
+    t.string "category"
+    t.string "default_unit"
+    t.decimal "bunch"
+    t.decimal "can"
+    t.decimal "clove"
+    t.decimal "cup"
+    t.decimal "dash"
+    t.decimal "fluid_ounce"
+    t.decimal "gallon"
+    t.decimal "liter"
+    t.decimal "milliliter"
+    t.decimal "ounce"
+    t.decimal "pinch_of"
+    t.decimal "pint"
+    t.decimal "pound"
+    t.decimal "package"
+    t.decimal "quart"
+    t.decimal "slice"
+    t.decimal "tablespoon"
+    t.decimal "teaspoon"
+    t.decimal "whole"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["food_item_id"], name: "index_unit_conversions_on_food_item_id"
+  end
+
   add_foreign_key "ingredients", "food_items"
   add_foreign_key "ingredients", "recipes"
   add_foreign_key "instructions", "recipes"
@@ -102,4 +130,5 @@ ActiveRecord::Schema.define(version: 2023_05_07_231717) do
   add_foreign_key "meal_plan_recipes", "meal_plans"
   add_foreign_key "meal_plan_recipes", "recipes"
   add_foreign_key "recipes", "cuisines"
+  add_foreign_key "unit_conversions", "food_items"
 end
