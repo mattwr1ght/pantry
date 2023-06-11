@@ -75,7 +75,7 @@
       food_item: sugar
   instructions:
     -  In a pan, combine 1/4 cup water and 2/3 cup sugar. Stir sugar into water before cooking. Place over medium-high heat and bring to a boil. Boil for 5 minutes, then for 1 more minute, until it starts to turn golden. Then, swirl the pan slowly. Continue to swirl for 2-4 more minutes or until the color turns golden caramel color, like the color of peanut butter. Add 2 tablespoons of warm tap water, swirl in, then pour into a non-stick loaf pan (flan pan) on a towel in a larger pan.
-    -  In a bowl, whisk together 2 whole eggs and 5 egg yolks. Add the sweetened condensed milk (shorter than normal soup can), evaporated milk (larger than Campbell soup size), 1/2 cup whole milk, 1 tablespoon vanilla extract, and 1/2 teaspoon of salt. Stir together and strain the mixture into the loaf pan.
+    -  In a bowl, whisk together 2 whole eggs and 5 egg yolks. Add the sweetened condensed milk (shorter than normal soup can), evaporated milk (larger than Campbell soup size), 1/2 cup milk, 1 tablespoon vanilla extract, and 1/2 teaspoon of salt. Stir together and strain the mixture into the loaf pan.
     -  Cover the loaf pan with foil to prevent skin from drying out. Place a folded cloth on a large baking pan, and place the loaf pan on top of that. Add hot water (not quite boiling) into the larger pan surrounding flan pan.
     -  Bake in a 300 degree oven for 1 hour and 15 minutes to 1 hour and 30 minutes, or until the internal temperature reaches 180 degrees. Be very careful with the hot water. Let cool in the hot water for 90 minutes and then chill for at least a few hours in the refrigerator, but no more than one day.
     -  Cut the edge of the flan with a knife to ensure it releases.
@@ -140,7 +140,7 @@
       food_item: all-purpose flour
     - quantity: 1/2
       unit: cup
-      food_item: whole milk
+      food_item: milk
     - quantity: 2
       unit: 
       food_item: eggs

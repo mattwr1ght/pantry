@@ -304,7 +304,7 @@ herb:
   - dill
   - fennel
   - lavender
-  - cymbopogon (also known as lemongrass)
+  - lemongrass
   - marjoram
   - oregano
   - parsley
@@ -340,18 +340,17 @@ meat:
   - egg
   - egg white
   - egg yolk
-dairy:
+dairy_liquid:
   - milk
-  - whole milk
   - heavy cream
-  - 2% milk
   - sweetened condensed milk
   - condensed milk
   - evaporated milk
-  - butter
-  - unsalted butter
   - cream
   - heavy cream
+dairy_solid:
+  - butter
+  - unsalted butter
   - yogurt
   - greek yogurt
   - sour cream

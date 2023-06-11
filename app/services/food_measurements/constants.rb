@@ -27,7 +27,7 @@ module FoodMeasurements
        "pound",
        "package",
        "quart", 
-       "slice", 
+       "slice of", 
        "tablespoon", 
        "teaspoon", 
        "whole",
