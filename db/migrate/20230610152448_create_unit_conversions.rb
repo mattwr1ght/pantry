@@ -1,7 +1,7 @@
 class CreateUnitConversions < ActiveRecord::Migration[6.1]
   def change
     create_table :unit_conversions do |t|
-      t.references :food_item, foreign_key: true 
+      t.references :food_item, foreign_key: true, allow_null: true  
       t.string :category
       t.string :default_unit
       t.decimal :bunch
@@ -19,7 +19,7 @@ class CreateUnitConversions < ActiveRecord::Migration[6.1]
       t.decimal :pound
       t.decimal :package
       t.decimal :quart 
-      t.decimal :slice 
+      t.decimal :slice_of
       t.decimal :tablespoon 
       t.decimal :teaspoon 
       t.decimal :whole

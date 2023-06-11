@@ -20,7 +20,7 @@
 #  pint         :decimal(, )
 #  pound        :decimal(, )
 #  quart        :decimal(, )
-#  slice        :decimal(, )
+#  slice_of     :decimal(, )
 #  tablespoon   :decimal(, )
 #  teaspoon     :decimal(, )
 #  whole        :decimal(, )
@@ -38,7 +38,6 @@
 #
 class UnitConversion < ApplicationRecord
   include FoodMeasurements::Constants
-  belongs_to :food_item
 
   validates :category, inclusion: { in: CATEGORIES }
   validates :default_unit, inclusion: { in: ALLOWED_UNITS }

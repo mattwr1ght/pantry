@@ -22,7 +22,7 @@ module FoodMeasurements
        "liter", 
        "milliliter", 
        "ounce", 
-       "pinch_of",
+       "pinch of",
        "pint", 
        "pound",
        "package",
