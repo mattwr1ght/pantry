@@ -40,7 +40,8 @@ module FoodMeasurements
     CATEGORIES = [
       "dairy_liquid", 
       "dairy_solid", 
-      "fruit", 
+      "fruit_pieces", 
+      "fruit_weight", 
       "grain", 
       "herb", 
       "liquid", 

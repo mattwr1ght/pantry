@@ -85,7 +85,24 @@ UnitConversion.create!(
 )
 
 UnitConversion.create(
-  category: "fruit",
+  category: "fruit_pieces",
+  default_unit: "whole",
+  bunch: 8.0,
+  can: 2.0,
+  clove: 0.1,
+  cup: 1.0,
+  dash: 0.01,
+  ounce: 10,
+  pinch_of: 0.01,
+  pound: 0.6,
+  slice_of: 0.1,
+  tablespoon: 0.1,
+  teaspoon: 0.04,
+  whole: 1.0
+)
+
+UnitConversion.create(
+  category: "fruit_weight",
   default_unit: "pound",
   bunch: 0.5,
   can: 1.25,
@@ -240,4 +257,11 @@ UnitConversion.create(
   tablespoon: 0.3,
   teaspoon: 0.1,
   whole: 0.25
+)
+
+#Individual FoodItems
+
+UnitConversion.create!(
+  food_item_id: FoodItem.find_by(name: "egg").id,
+  default_unit: 'whole',
 )

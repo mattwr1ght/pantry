@@ -6,11 +6,11 @@
   vegan: true
   ingredients:
     - quantity: 1
-      unit: 
+      unit: whole
       food_item: apple
       preparation: 
     - quantity: 1
-      unit: 
+      unit: whole
       food_item: pear
       preparation: 
   instructions:
@@ -142,7 +142,7 @@
       unit: cup
       food_item: milk
     - quantity: 2
-      unit: 
+      unit: whole
       food_item: eggs
       preparation: lightly beaten
       description: large
@@ -160,7 +160,7 @@
       unit: tablespoon
       food_item: confectioners' sugar
     - quantity: 1/2
-      unit: 
+      unit: whole
       food_item: lemon
       preparation: freshly squeezed
       description: of a 
@@ -196,12 +196,12 @@
       food_item: red onion
       preparation: chopped
     - quantity: 1
-      unit: 
+      unit: whole
       food_item: jalapeño
       descriptor: small 
       preparation: seeded and minced
     - quantity: 1
-      unit: 
+      unit: whole
       food_item: garlic clove
       descriptor: medium
       preparation: minced
@@ -209,6 +209,7 @@
       unit: cup
       food_item: extra virgin olive oil
     - quantity: 1
+      unit: whole
       food_item: lime
       preparation: juiced
     - quantity: 2
@@ -248,6 +249,7 @@
       unit: pound
       food_item: potatoes
     - quantity: 1
+      unit: whole
       food_item: yellow onion
       preparation: quartered
     - quantity: 1/2
@@ -255,6 +257,7 @@
       food_item: bacon
       preparation: diced
     - quantity: 1
+      unit: whole
       adjective: large
       food_item: red onion
       preparation: diced
@@ -275,6 +278,7 @@
       food_item: black pepper
       preparation: freshly ground
     - quantity: 8
+      unit: whole
       food_item: green onions
       preparation: thinly sliced
     - quantity: 1/4

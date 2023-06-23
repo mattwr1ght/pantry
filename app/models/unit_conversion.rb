@@ -40,7 +40,8 @@ class UnitConversion < ApplicationRecord
   include FoodMeasurements::Constants
 
   validates :category, inclusion: { in: CATEGORIES }
-  validates :default_unit, inclusion: { in: ALLOWED_UNITS }
+  validates :default_unit, inclusion: { in: ALLOWED_UNITS }, allow_nil: false
+
 
 
 end
