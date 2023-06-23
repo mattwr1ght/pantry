@@ -8,6 +8,15 @@
           <%= link_to recipe.name, recipe.raw_recipe %>
         </li>
       <% end %>
+      </ul>
+    <h2>Ingredients List</h2>
+      <ul>
+      <% @inventory.each do |inventory| %>
+        <li>
+          <%= "#{inventory.quantity} #{inventory.unit} #{inventory.food_item.name}" %>
+        </li>
+      <% end %>
+
   </div>
   
   <section class="admin">

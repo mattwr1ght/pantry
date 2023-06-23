@@ -1,13 +1,36 @@
-fruit:
+fruit_pieces:
+  - Apple
+  - Apricot
+  - Avocado
+  - Banana
+  - Grapefruit
+  - Guava
+  - Honeydew
+  - Lemon
+  - Lime
+  - Mango
+  - Melon
+  - Cantaloupe
+  - Nectarine
+  - Orange
+  - Blood orange
+  - Clementine
+  - Mandarine
+  - Tangerine
+  - Papaya
+  - Passionfruit
+  - Pawpaw
+  - Peach
+  - Pear
+  - Persimmon
+  - Prune
+  - Tangelo
+fruit_weight:
   - Abiu
   - Açaí
   - Acerola
   - Ackee
   - African cucumber
-  - Apple
-  - Apricot
-  - Avocado
-  - Banana
   - Bilberry
   - Blackberry
   - Blackcurrant
@@ -46,9 +69,7 @@ fruit:
   - Gooseberry
   - Grape
   - Raisin
-  - Grapefruit
   - Grewia asiatica
-  - Guava
   - Hala Fruit
   - Honeyberry
   - Horned Melon
@@ -64,13 +85,10 @@ fruit:
   - Kiwano
   - Kiwifruit
   - Kumquat
-  - Lemon
-  - Lime
   - Loganberry
   - Longan
   - Loquat
   - Grewia asiatica
-  - Guava
   - Hala Fruit
   - Hawthorn Berry
   - Honeyberry
@@ -87,8 +105,6 @@ fruit:
   - Kiwano
   - Kiwifruit
   - Kumquat
-  - Lemon
-  - Lime
   - Loganberry
   - Longan
   - Loquat
@@ -97,13 +113,9 @@ fruit:
   - Magellan Barberry
   - Mamey Apple
   - Mamey Sapote
-  - Mango
   - Mangosteen
   - Marionberry
-  - Melon
-  - Cantaloupe
   - Galia melon
-  - Honeydew
   - Mamin Chino
   - Mouse melon
   - Musk melon
@@ -112,20 +124,6 @@ fruit:
   - Monstera deliciosa
   - Mulberry
   - Nance
-  - Nectarine
-  - Orange
-  - Blood orange
-  - Clementine
-  - Mandarine
-  - Tangerine
-  - Papaya
-  - Passionfruit
-  - Pawpaw
-  - Peach
-  - Peaches
-  - Pear
-  - Persimmon
-  - Prune
   - Pineapple
   - Pineberry
   - Pitaya
@@ -155,7 +153,6 @@ fruit:
   - Surinam cherry
   - Tamarillo
   - Tamarind
-  - Tangelo
   - Tayberry
   - Ugli fruit
   - Vitis Vinifera
@@ -304,7 +301,7 @@ herb:
   - dill
   - fennel
   - lavender
-  - cymbopogon (also known as lemongrass)
+  - lemongrass
   - marjoram
   - oregano
   - parsley
@@ -337,21 +334,17 @@ meat:
   - ground beef
   - chuck roast
   - ribeye steak
-  - egg
-  - egg white
-  - egg yolk
-dairy:
+dairy_liquid:
   - milk
-  - whole milk
   - heavy cream
-  - 2% milk
   - sweetened condensed milk
   - condensed milk
   - evaporated milk
-  - butter
-  - unsalted butter
   - cream
   - heavy cream
+dairy_solid:
+  - butter
+  - unsalted butter
   - yogurt
   - greek yogurt
   - sour cream
@@ -363,6 +356,9 @@ dairy:
   - parmesan cheese
   - goat cheese
   - mozzerella cheese
+  - egg
+  - egg white
+  - egg yolk
 grain:
   - rice
   - white rice

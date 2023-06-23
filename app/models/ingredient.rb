@@ -24,7 +24,7 @@ class Ingredient < ApplicationRecord
   belongs_to :recipe
   belongs_to :food_item
 
-  validates :unit, inclusion: { in: ALLOWED_UNITS }, allow_nil: true
+  validates :unit, inclusion: { in: ALLOWED_UNITS }, allow_nil: false 
   validates :quantity, inclusion: { in: ALLOWED_FRACTIONS.keys + ALLOWED_WHOLE_NUMBERS }
 
   attribute :quantity, :decimal
