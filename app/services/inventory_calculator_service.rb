@@ -9,13 +9,13 @@ class InventoryCalculatorService
 
   def run
     @ingredient_list = @meal_plan.recipes.map { |recipe| recipe.ingredients }.flatten
-    combine_inventories
+    combine_ingredients
     @inventories
   end
 
   private
 
-  def combine_inventories
+  def combine_ingredients
     existing_inventories = Inventory.where(meal_plan_id: @meal_plan_id)
     @ingredient_list.sort_by! { |ingredient| ingredient.food_item_id }
 
@@ -45,7 +45,7 @@ class InventoryCalculatorService
     inventory = Inventory.create(quantity: quantity, 
                               unit: UnitConversion.conversion_for_food_item(food_item_id).default_unit, 
                               food_item_id: food_item_id,
-                              meal_plan_id: @meal_plan
+                              meal_plan_id: @meal_plan.id
                             )
   end  
 end

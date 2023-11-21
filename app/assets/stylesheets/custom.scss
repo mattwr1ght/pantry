@@ -12,7 +12,7 @@ $yellow: #ffc107;
 $light-yellow: #ffc;
 $red: #dc3545;
 
-// Custom Variables
+// Custom Variables 
 
 $secondary-text-color: $medium-gray;
 $accent-color: $orange;
@@ -425,6 +425,12 @@ section.admin {
 
   a.button {
     @extend .btn, .btn-secondary;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .button-delete {
+    @extend .btn, .btn-outline-danger;
     letter-spacing: 1px;
     text-transform: uppercase;
   }

@@ -21,11 +21,21 @@ class InventoriesController < ApplicationController
     if @inventory.update(quantity: quantity,
                       unit: inventory_params[:unit],
                       food_item_id: inventory_params[:food_item_id])
-      redirect_to @inventory, notice: "Item added!"
+      redirect_to action: "index", alert: "Item added!"
     else
       render :new
     end
   end    
+
+  def destroy_multiple
+    Inventory.where(id: params[:inventory_ids]).destroy_all
+    redirect_to inventories_path, alert: 'Selected items were successfully deleted'
+  end
+
+  def consolidate
+    
+    redirect_to action: "index"
+  end
 
   private
 
@@ -54,7 +64,15 @@ class InventoriesController < ApplicationController
   end
 
   def inventory_params
-    params.require(:inventory).permit(:search, :inventory_id, :quantity, :unit, :food_item_name, :food_item_id)
+    params.require(:inventory).permit(
+      :search, 
+      :inventory_id, 
+      :quantity, 
+      :unit, 
+      :food_item_name, 
+      :food_item_id,
+      :inventory_ids
+    )
   end 
 
 end

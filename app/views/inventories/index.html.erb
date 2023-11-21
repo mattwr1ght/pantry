@@ -7,22 +7,29 @@
   </p>
 <% end %>
 
+<%= form_tag destroy_multiple_inventories_path, method: :delete, class: "delete-form" do %>
+  <% @inventory.each do |inventory| %>
+    <section class="inventory">
+      <div class="summary">
+        <h2><td><%= check_box_tag "inventory_ids[]", inventory.id, false, class: 'selectable' %></td>
+          <%= link_to inventory.food_item.name, inventory %>
+        </h2>
+        <h3>
+          <%= "#{inventory.quantity} #{inventory.unit}" %>
+        </h3>
+      </div>
+    </section>
+  <% end %>
 
-<% @inventory.each do |inventory| %>
-  <section class="inventory">
-    <div class="summary">
-      <h2>
-        <%= link_to inventory.food_item.name, inventory %>
-      </h2>
-      <h3>
-        <%= "#{inventory.quantity} #{inventory.unit}" %>
-      </h3>
-    </div>
+  <section class="admin">
+    <h2>
+      <%= link_to "Add New Item", new_inventory_path, class: "button"%>
+    </h2>
+    <h2>
+      <%= link_to "Consolidate Items", consolidate_inventories_path, class: "button"%>
+    </h2>
+    <h2>
+      <%= button_tag "Delete Items", class: "button-delete", data: { confirm: "Are you sure?" } %>
+    </h2>
   </section>
 <% end %>
-
-<section class="admin">
-  <h2>
-    <%= link_to "Add New Item", new_inventory_path, class: "button"%>
-  </h2>
-</section>

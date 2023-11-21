@@ -31,6 +31,11 @@ Rails.application.routes.draw do
 
   get "/welcome", to: "welcome#index"
   resources :recipes
-  resources :inventories
+  resources :inventories do 
+    collection do 
+      get 'consolidate', to: 'inventories#consolidate', as: 'consolidate'
+      delete 'destroy_multiple', to: 'inventories#destroy_multiple', as: 'destroy_multiple'
+    end 
+  end 
   resources :meal_plans
 end
