@@ -21,7 +21,7 @@ class InventoriesController < ApplicationController
     if @inventory.update(quantity: quantity,
                       unit: inventory_params[:unit],
                       food_item_id: inventory_params[:food_item_id])
-      redirect_to action: "index", alert: "Item added!"
+      redirect_to @inventory, notice: "Item added!"
     else
       render :new
     end
@@ -33,8 +33,8 @@ class InventoriesController < ApplicationController
   end
 
   def consolidate
-    
-    redirect_to action: "index"
+    Inventory.consolidate
+    redirect_to inventories_path, notice: "Item consolidated!"
   end
 
   private

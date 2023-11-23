@@ -43,7 +43,7 @@ class MealPlanCalculatorService
 
   def create_inventory(food_item_id, quantity)
     inventory = Inventory.create(quantity: quantity, 
-                              unit: UnitConversion.conversion_for_food_item(food_item_id).default_unit, 
+                              unit: UnitConversion.food_item_conversion(food_item_id).default_unit, 
                               food_item_id: food_item_id,
                               meal_plan_id: @meal_plan.id
                             )

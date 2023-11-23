@@ -37,4 +37,8 @@ class Inventory < ApplicationRecord
   def food_item_name
     food_item.name if food_item
   end
+
+  def self.consolidate
+    InventoryConsolidator.new.run
+  end
 end

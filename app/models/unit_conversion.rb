@@ -42,7 +42,7 @@ class UnitConversion < ApplicationRecord
   validates :category, inclusion: { in: CATEGORIES }
   validates :default_unit, inclusion: { in: ALLOWED_UNITS }, allow_nil: false
 
-  def self.conversion_for_food_item(food_item_id)
+  def self.food_item_conversion(food_item_id)
     food_unit = UnitConversion.find_by(food_item_id: food_item_id)
     if food_unit.presence
       return food_unit
