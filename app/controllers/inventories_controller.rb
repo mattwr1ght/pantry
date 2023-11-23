@@ -1,9 +1,9 @@
 class InventoriesController < ApplicationController
   def index
     if params[:search].presence
-      @inventory = search_inventory
+      @inventory = search_inventory.where(meal_plan_id: nil)
     else
-      @inventory = Inventory.all
+      @inventory = Inventory.where(deleted_at: nil, meal_plan_id: nil)
     end
   end
 
