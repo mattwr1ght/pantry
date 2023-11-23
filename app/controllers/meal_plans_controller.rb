@@ -8,7 +8,7 @@ class MealPlansController < ApplicationController
     @meal_plan = MealPlan.find(params[:id])
     @raw_recipes = @meal_plan.recipes
     @recipes = @raw_recipes.map { |recipe| RecipeViewModel.new(recipe.id) }
-    @inventory = InventoryCalculatorService.new(@meal_plan).run
+    @inventory = MealPlanCalculatorService.new(@meal_plan).run
   end
 
   def new

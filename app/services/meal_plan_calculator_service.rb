@@ -1,4 +1,4 @@
-class InventoryCalculatorService
+class MealPlanCalculatorService
   attr_accessor :meal_plan, :ingredient_list, :inventories
 
   def initialize(meal_plan)
