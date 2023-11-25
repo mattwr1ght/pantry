@@ -15,6 +15,10 @@ class InventoriesController < ApplicationController
     @inventory = Inventory.new
   end
 
+  def edit
+    @inventory = Inventory.find(params[:id])
+  end
+
   def create
     @inventory = Inventory.new
     # @recipe.update(cuisine_id: cuisine.id) if cuisine.presence
@@ -25,7 +29,16 @@ class InventoriesController < ApplicationController
     else
       render :new
     end
-  end    
+  end
+  
+  def update
+    @inventory = Inventory.find(params[:id])
+    if @inventory.update(inventory_params)
+      redirect_to inventories_path, notice: "Inventory item updated successfully."
+    else
+      render :edit
+    end
+  end
 
   def destroy_multiple
     Inventory.where(id: params[:inventory_ids]).destroy_all

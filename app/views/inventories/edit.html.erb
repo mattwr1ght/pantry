@@ -1,0 +1,23 @@
+<!-- edit.html.erb -->
+
+<%= form_for @inventory do |f| %>
+  <div class="field">
+    <%= f.label :food_item %>
+    <%= f.text_field :food_item_name, disabled: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :quantity %>
+    <%= f.collection_select :quantity, Inventory::ALLOWED_FRACTIONS.keys + Inventory::ALLOWED_WHOLE_NUMBERS, :to_s, :to_s, selected: @inventory.quantity.to_i %>
+    <%= puts @inventory.quantity.inspect %>
+  </div>
+
+  <div class="field">
+    <%= f.label :unit %>
+    <%= f.collection_select :unit, Inventory::ALLOWED_UNITS, :itself, :to_s, selected: @inventory.unit %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Update", class: "button" %>
+  </div>
+<% end %>

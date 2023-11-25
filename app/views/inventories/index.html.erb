@@ -13,6 +13,7 @@
       <div class="summary">
         <h2><td><%= check_box_tag "inventory_ids[]", inventory.id, false, class: 'selectable' %></td>
           <%= link_to inventory.food_item.name, inventory %>
+          <%= link_to "Edit", edit_inventory_path(inventory), class: "button" %>
         </h2>
         <h3>
           <%= "#{inventory.quantity} #{inventory.unit}" %>
